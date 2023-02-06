@@ -10,9 +10,13 @@ class Solution:
         broken = False
         res = ""
         while i < min_len and not broken:
-            s = [curr[i] for curr in strs]
-            if len(set(s)) == 1:
-                res += s[0]
+            # s = [curr[i] for curr in strs]
+            s = set({})
+            for curr in strs:
+                s.add(curr[i])
+            if len(s) == 1:
+                # res += s[0]
+                res += strs[0][i]
             else:
                 broken = True
             i += 1
