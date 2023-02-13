@@ -14,7 +14,7 @@ class Solution:
             # total += concat
             # l += 1
             # r -= 1
-            total += eval(str(nums[l]) + str(nums[r]))
+            total += int(str(nums[l]) + str(nums[r]))
             l += 1
             r -= 1
         
