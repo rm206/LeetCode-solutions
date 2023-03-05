@@ -2,6 +2,8 @@ class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         l1 = len(s1)
         l2 = len(s2)
+        if l1 > l2:
+            return False
         d1 = {}
         for c in s1:
             d1[c] = 1 + d1.get(c, 0)
@@ -10,7 +12,6 @@ class Solution:
         for r in range(l2):
             if r - l + 1 > l1:
                 if d2[s2[l]] > 1:
-                     
                     d2[s2[l]] -= 1
                 else:
                     d2.pop(s2[l])
