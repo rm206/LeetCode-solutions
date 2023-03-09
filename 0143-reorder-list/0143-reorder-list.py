@@ -54,6 +54,6 @@ class Solution:
                 nextL = 1
             tail = tail.next
         
-        return dummy.next
+        head = dummy.next
         
                 
