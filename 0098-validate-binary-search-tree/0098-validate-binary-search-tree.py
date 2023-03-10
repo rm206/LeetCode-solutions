@@ -5,6 +5,17 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    def isValidHelper(self, root: Optional[TreeNode], left, right):
+        if not root:
+            return True
+        if not(root.val < right and root.val > left):
+            return False
+        return self.isValidHelper(root.left, left, root.val) and self.isValidHelper(root.right, root.val, right)
+            
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        return self.isValidHelper(root, float("-inf"), float("inf"))
+
+'''
     def isValidHelper(self, root: Optional[TreeNode], arr):
         if root:
             self.isValidHelper(root.left, arr)
@@ -18,3 +29,4 @@ class Solution:
             if inOrder[i] >= inOrder[i+1]:
                 return False
         return True
+'''
