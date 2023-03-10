@@ -16,6 +16,7 @@ class Solution:
         return self.isValidHelper(root, float("-inf"), float("inf"))
 
 '''
+T: O(N) S: O(H+N)
     def isValidHelper(self, root: Optional[TreeNode], arr):
         if root:
             self.isValidHelper(root.left, arr)
