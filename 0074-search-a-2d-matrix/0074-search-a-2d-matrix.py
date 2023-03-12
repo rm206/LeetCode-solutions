@@ -18,7 +18,6 @@ class Solution:
             return False
         
         row = self.find_row(matrix, ROWS, COLS, target)
-        print(row)
         if row == -1:
             return False
         
