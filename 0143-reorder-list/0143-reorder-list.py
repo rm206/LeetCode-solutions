@@ -11,12 +11,47 @@ class Solution:
             curr.next = prev
             prev = curr
             curr = temp
-
         return prev
+    
+    # def printLL(self, head):
+    #     while head:
+    #         print(head.val, end = "")
+    #         head = head.next
+    #     print()
+            
     def reorderList(self, head: Optional[ListNode]) -> None:
         """
         Do not return anything, modify head in-place instead.
         """
+        slow, fast = head, head.next
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        
+        l1 = head
+        l2 = slow.next
+        slow.next = None
+        l2 = self.reverseList(l2)
+        # self.printLL(l1)
+        # self.printLL(l2)
+              
+        dummy = ListNode()
+        tail = dummy
+        nextL = 1
+        while l1 or l2:
+            if nextL == 1:
+                tail.next = l1
+                l1 = l1.next
+                nextL = 2
+            else:
+                tail.next = l2
+                l2 = l2.next
+                nextL = 1
+            tail = tail.next
+        
+        head = dummy.next
+
+'''
         count = 0
         curr = head
         while curr:
@@ -55,5 +90,6 @@ class Solution:
             tail = tail.next
         
         head = dummy.next
+'''
         
                 
