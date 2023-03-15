@@ -12,12 +12,6 @@ class Solution:
             prev = curr
             curr = temp
         return prev
-    
-    # def printLL(self, head):
-    #     while head:
-    #         print(head.val, end = "")
-    #         head = head.next
-    #     print()
             
     def reorderList(self, head: Optional[ListNode]) -> None:
         """
@@ -32,8 +26,6 @@ class Solution:
         l2 = slow.next
         slow.next = None
         l2 = self.reverseList(l2)
-        # self.printLL(l1)
-        # self.printLL(l2)
               
         dummy = ListNode()
         tail = dummy
