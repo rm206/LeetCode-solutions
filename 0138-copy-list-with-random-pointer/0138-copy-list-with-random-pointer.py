@@ -16,7 +16,7 @@ class Solution:
             copy = Node(cur.val)
             old_to_new[cur] = copy
             cur = cur.next
-        
+
         cur = head
         while cur:
             copy = old_to_new[cur]
