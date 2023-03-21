@@ -14,7 +14,5 @@ class Solution:
             
             if helper(p.left, q.left) and helper(p.right, q.right) and p.val == q.val:
                 return True
-            else:
-                return False
         
         return helper(p, q)
