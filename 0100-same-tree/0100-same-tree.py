@@ -11,7 +11,6 @@ class Solution:
                 return True
             if (p and not q) or (q and not p):
                 return False
-            
             if helper(p.left, q.left) and helper(p.right, q.right) and p.val == q.val:
                 return True
         
