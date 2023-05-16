@@ -16,10 +16,17 @@ class Solution:
         
         #Jan 9
         # return len(set(nums)) != len(nums)
-        set_nums = set({})
-        for num in nums:
-            if num in set_nums:
+        # set_nums = set({})
+        # for num in nums:
+        #     if num in set_nums:
+        #         return True
+        #     else:
+        #         set_nums.add(num)
+        # return False
+        
+        numsSet = set({})
+        for n in nums:
+            if n in numsSet:
                 return True
-            else:
-                set_nums.add(num)
+            numsSet.add(n)
         return False
