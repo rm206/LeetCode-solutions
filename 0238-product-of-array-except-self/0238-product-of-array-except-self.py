@@ -13,9 +13,7 @@ class Solution:
         for i in range(len_nums - 1, -1, -1):
             post[i] = running_mult
             running_mult *= nums[i]
-        
-        print(pre)
-        print(post)
+
         res = []
         for i in range(len_nums):
             res.append(pre[i] * post[i])
