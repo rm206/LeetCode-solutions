@@ -9,13 +9,13 @@ class Solution:
             if opening == closing and opening == n:
                 res.append(curr_str)
                 return
-            if closing < opening:
-                curr_str += ')'
-                helper(opening, closing + 1, curr_str)
-                curr_str = curr_str[:-1]
             if opening < n:
                 curr_str += '('
                 helper(opening+1, closing, curr_str)
+                curr_str = curr_str[:-1]
+            if closing < opening:
+                curr_str += ')'
+                helper(opening, closing + 1, curr_str)
                 curr_str = curr_str[:-1]
 
         
