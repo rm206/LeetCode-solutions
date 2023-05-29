@@ -1,17 +1,21 @@
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
-        pairs = [[p, s] for p, s in zip(position, speed)]
-        pairs = sorted(pairs)[::-1]
         stack = []
-        # print(pairs)
-        for pos, sp in pairs:
-            time = (target-pos)/sp
-            if stack == []:
-                stack.append(time)
-            elif time <= stack[-1]:
-                continue
+        times = []
+        for i in range(len(position)):
+            times.append((target-position[i])/speed[i])
+        
+        arr = []
+        for i in range(len(position)):
+            arr.append((position[i], speed[i], times[i]))
+        arr.sort(key= lambda x : x[0], reverse = True)
+        
+        for curr in arr:
+            if len(stack) == 0:
+                stack.append(curr[2])
+            elif curr[2] > stack[-1]:
+                stack.append(curr[2])
             else:
-                stack.append(time)
+                continue
         
         return len(stack)
-                
