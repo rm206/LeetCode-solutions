@@ -22,19 +22,22 @@ class Solution:
                 stack.append(person1)
         
         potential_candidate = stack.pop()
-        is_celebrity_row = True
-        is_celebrity_col = True
+        # is_celebrity_row = True
+        # is_celebrity_col = True
         for i in range(n):
             if M[potential_candidate][i] == 1:
-                is_celebrity_row = False
+                # is_celebrity_row = False
+                return -1
             if potential_candidate != i:
                 if M[i][potential_candidate] == 0:
-                    is_celebrity_col = False
+                    # is_celebrity_col = False
+                    return -1
         
-        if is_celebrity_row and is_celebrity_col:
-            return potential_candidate
-        else:
-            return -1
+        # if is_celebrity_row and is_celebrity_col:
+        #     return potential_candidate
+        # else:
+        #     return -1
+        return potential_candidate
         
 
 
