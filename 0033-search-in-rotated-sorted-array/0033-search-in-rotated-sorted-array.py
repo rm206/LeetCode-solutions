@@ -7,20 +7,24 @@ class Solution:
             if nums[mid] == target:
                 return mid
             
-            if nums[l] < nums[r]:
-                if target < nums[mid]:
-                    r = mid - 1
-                else:
+            # left sorted portion
+            if nums[l] <= nums[mid]:
+                # target < nums[l] -> go right
+                # target > nums[mid] -> go right
+                # else go left
+                if target < nums[l] or target > nums[mid]:
                     l = mid + 1
-            elif nums[l] <= nums[mid] :
-                if nums[l] <= target and target <= nums[mid]:
-                    r = mid - 1
                 else:
-                    l = mid + 1
+                    r = mid - 1
+            
+            # right sorted portion
             else:
-                if nums[mid] <= target and target <= nums[r]:
-                    l = mid + 1
-                else:
+                # target > nums[r] -> go left
+                # target < nums[mid] -> go left
+                # else go right
+                if target > nums[r] or target < nums[mid]:
                     r = mid - 1
+                else:
+                    l = mid + 1
         
         return -1
