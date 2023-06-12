@@ -22,7 +22,7 @@ class Solution:
             
             d2[s2[r]] = 1 + d2.get(s2[r], 0)
             
-            # compare dicts with the curretn corrected window
+            # compare dicts with the current corrected window
             if d1 == d2:
                 return True
             
