@@ -1,16 +1,19 @@
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
-        arr_len = len(arr)
-        if arr_len < 2:
-            return [-1]
+        l = len(arr)
+        greatest = arr[l - 1]
+        arr[l - 1] = -1
         
-        rmax = arr[-1]
-        for i in range(arr_len-2, -1, -1):
-            temp = arr[i]
-            arr[i] = rmax
-            if temp > rmax:
-                rmax = temp
+        if l == 1:
+            return arr
         
-        arr[-1] = -1
+        for i in range(l - 2, -1, -1):
+            curr = arr[i]
+            arr[i] = greatest
+            
+            if curr > greatest:
+                greatest = curr
+        
         return arr
-    
+            
+            
