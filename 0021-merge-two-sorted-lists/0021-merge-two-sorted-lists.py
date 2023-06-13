@@ -19,11 +19,12 @@ class Solution:
                 
             curr = curr.next
         
-        if p1:
-            curr.next = p1
+#         if p1:
+#             curr.next = p1
         
-        if p2:
-            curr.next = p2
+#         if p2:
+#             curr.next = p2
+        curr.next = p1 or p2
         
         return dummy.next
             
