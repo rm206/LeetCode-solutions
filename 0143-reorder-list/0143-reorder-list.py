@@ -4,84 +4,46 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        prev, curr = None, head
-        while curr:
-            temp = curr.next
-            curr.next = prev
-            prev = curr
-            curr = temp
-        return prev
-            
     def reorderList(self, head: Optional[ListNode]) -> None:
         """
         Do not return anything, modify head in-place instead.
         """
+        def reverseList(head):
+            prev, curr = None, head
+
+            while curr:
+                next_temp = curr.next
+                curr.next = prev
+                prev = curr
+                curr = next_temp
+
+            return prev
+        
         slow, fast = head, head.next
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
         
-        l1 = head
-        l2 = slow.next
+        r_head = slow.next
         slow.next = None
-        l2 = self.reverseList(l2)
-              
-        dummy = ListNode()
-        tail = dummy
-        nextL = 1
-        while l1 or l2:
-            if nextL == 1:
-                tail.next = l1
-                l1 = l1.next
-                nextL = 2
-            else:
-                tail.next = l2
-                l2 = l2.next
-                nextL = 1
-            tail = tail.next
-        
-        head = dummy.next
-
-'''
-        count = 0
-        curr = head
-        while curr:
-            count += 1
-            curr = curr.next
-
-        l1, l2 = None, None
-        if count % 2 == 0:
-            count = count /2
-        else:
-            count = (count // 2) + 1
-        
-        l1 = head
-        temp = head
-        splitCount = 0
-        while splitCount < count-1:
-            temp = temp.next
-            splitCount += 1
-            
-        l2 = temp.next
-        temp.next = None
-        l2 = self.reverseList(l2)
+        r_head = reverseList(r_head)
         
         dummy = ListNode()
-        tail = dummy
-        nextL = 1
-        while l1 or l2:
-            if nextL == 1:
-                tail.next = l1
-                l1 = l1.next
-                nextL = 2
+        curr = dummy
+        p1, p2 = head, r_head
+        turn = 1
+        
+        while p1 or p2:
+            if turn == 1:
+                curr.next = p1
+                curr = curr.next
+                p1 = p1.next
+                turn *= -1
             else:
-                tail.next = l2
-                l2 = l2.next
-                nextL = 1
-            tail = tail.next
+                curr.next = p2
+                curr = curr.next
+                p2 = p2.next
+                turn *= -1
+
         
         head = dummy.next
-'''
-        
-                
