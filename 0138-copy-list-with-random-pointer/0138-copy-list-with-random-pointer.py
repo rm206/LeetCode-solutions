@@ -7,21 +7,20 @@ class Node:
         self.random = random
 """
 
-class Solution:   
+class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        old_to_new = {None:None}
+        s = {}
+        s[None] = None
         
-        cur = head
-        while cur:
-            copy = Node(cur.val)
-            old_to_new[cur] = copy
-            cur = cur.next
-
-        cur = head
-        while cur:
-            copy = old_to_new[cur]
-            copy.next = old_to_new[cur.next]
-            copy.random = old_to_new[cur.random]
-            cur = cur.next
+        ptr = head
+        while ptr:
+            s[ptr] = Node(ptr.val, None, None)
+            ptr = ptr.next
         
-        return old_to_new[head]
+        ptr = head
+        while ptr:
+            s[ptr].next = s[ptr.next]
+            s[ptr].random = s[ptr.random]
+            ptr = ptr.next
+        
+        return s[head]
