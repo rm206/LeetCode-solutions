@@ -12,7 +12,8 @@ class Solution:
                 return True
             elif not (node.val > left and node.val < right):
                 return False
-            return helper(node.left, left, node.val) and helper(node.right, node.val, right)
+            else:
+                return helper(node.left, left, node.val) and helper(node.right, node.val, right)
         
         return helper(root, float("-inf"), float("inf"))        
 
