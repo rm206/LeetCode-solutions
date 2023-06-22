@@ -9,8 +9,6 @@ class Node:
 '''
 class Solution:
     def printBoundaryView(self, root):
-        if (not root.left) and (not root.right):
-            return [root.data]
         
         self.res = []
         
@@ -28,6 +26,7 @@ class Solution:
         def leaves(node):
             if not node:
                 return
+            
             if not node.left and not node.right:
                 self.res.append(node.data)
                 return
@@ -45,7 +44,6 @@ class Solution:
                 right_boundary(node.left)
             
             self.res.append(node.data)
-        
         
         self.res.append(root.data)
         left_boundary(root.left)
