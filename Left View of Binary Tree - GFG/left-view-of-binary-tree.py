@@ -12,6 +12,9 @@ class Node:
 
 #Function to return a list containing elements of left view of the binary tree.
 def LeftView(root):
+        if not root:
+            return []
+            
         res = []
         q = []
         q.append(root)
@@ -27,6 +30,7 @@ def LeftView(root):
                         q.append(popped_node.left)
                     if popped_node.right:
                         q.append(popped_node.right)
+            
             
             if level:
                 res.append(level[0])
