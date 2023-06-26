@@ -29,7 +29,6 @@ class Solution:
         lowest_hd, max_hd = min(mapping.keys()), max(mapping.keys())
         
         for hd in range(lowest_hd, max_hd + 1):
-            # if hd in mapping:
             for j in mapping[hd]:
                 res.append(j)
         
