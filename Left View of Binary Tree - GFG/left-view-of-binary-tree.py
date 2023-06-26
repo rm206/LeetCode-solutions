@@ -24,16 +24,14 @@ def LeftView(root):
             
             for i in range(len(q)):
                 popped_node = q.pop(0)
-                if popped_node:
-                    level.append(popped_node.data)
-                    if popped_node.left:
-                        q.append(popped_node.left)
-                    if popped_node.right:
-                        q.append(popped_node.right)
+                level.append(popped_node.data)
+                if popped_node.left:
+                    q.append(popped_node.left)
+                if popped_node.right:
+                    q.append(popped_node.right)
             
             
-            if level:
-                res.append(level[0])
+            res.append(level[0])
         
         return res
 
