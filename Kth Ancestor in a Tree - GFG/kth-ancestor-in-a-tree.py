@@ -1,35 +1,74 @@
 #User function Template for python3
 
 def kthAncestor(root,k, node):
-    #code here
     def helper(curr):
-        nonlocal node, finder
-        
+        nonlocal node, k
         if not curr:
-            return
+            return None
         
-        finder.append(curr.data)
+        if node == curr.data:
+            return curr
         
-        if curr.data == node:
-            return
+        left = helper(curr.left)
+        right = helper(curr.right)
         
-        helper(curr.left)
-        if finder[-1] == node:
-            return
+        if left and not right:
+            k -= 1
+            if k <= 0:
+                k = float('inf')
+                return curr
+            
+            return left
         
-        helper(curr.right)
-        if finder[-1] == node:
-            return
+        if not left and right:
+            k -= 1
+            if k <= 0:
+                k = float('inf')
+                return curr
+            
+            return right
         
-        finder.pop()
-        
-    finder = []
-    helper(root)
+        else:
+            return None
     
-    if len(finder) <= k:
+    
+    res = helper(root)
+    if not res or res.data == node:
         return -1
+    else:
+        return res.data
+
+
+'''
+def helper(curr):
+    nonlocal node, finder
     
-    return finder[-1-k]
+    if not curr:
+        return
+    
+    finder.append(curr.data)
+    
+    if curr.data == node:
+        return
+    
+    helper(curr.left)
+    if finder[-1] == node:
+        return
+    
+    helper(curr.right)
+    if finder[-1] == node:
+        return
+    
+    finder.pop()
+    
+finder = []
+helper(root)
+
+if len(finder) <= k:
+    return -1
+
+return finder[-1-k]
+'''
 
 #{ 
  # Driver Code Starts
