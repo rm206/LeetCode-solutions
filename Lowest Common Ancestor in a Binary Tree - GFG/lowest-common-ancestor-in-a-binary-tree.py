@@ -11,9 +11,10 @@ class Node:
 class Solution:
     #Function to return the lowest common ancestor in a Binary Tree.
     def lca(self,root, n1, n2):
-        
+        # Code here
         def helper(node):
             nonlocal n1, n2
+            
             if not node:
                 return None
             
@@ -23,11 +24,11 @@ class Solution:
             left = helper(node.left)
             right = helper(node.right)
             
-            if (left and right):
+            if left and right:
                 return node
-            elif left and not right:
+            if left and not right:
                 return left
-            elif not left and right:
+            if not left and right:
                 return right
             else:
                 return None
