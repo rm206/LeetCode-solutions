@@ -28,7 +28,6 @@ class Solution:
 
         # subset = []
         res = []
-        # nums.sort()
         solver(nums, [])
         # solver(0)
         return res
