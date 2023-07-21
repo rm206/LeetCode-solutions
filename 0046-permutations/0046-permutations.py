@@ -9,7 +9,10 @@ class Solution:
                 if num not in curr_set:
                     curr.append(num)
                     curr_set.add(num)
+                    
                     solver(curr, curr_set)
+                    
+                    # backtrack
                     curr.pop()
                     curr_set.remove(num)
         
