@@ -3,6 +3,12 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        while k:
-            nums.insert(0, nums.pop())
-            k -= 1
+        
+        temp = nums.copy()
+        
+        for i in range(len(nums)):
+            temp[(i + k) % len(nums)] = nums[i]
+        
+        for i in range(len(temp)):
+            nums[i] = temp[i]
+        
