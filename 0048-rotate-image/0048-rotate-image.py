@@ -11,6 +11,9 @@ class Solution:
                     if i <= j:
                         matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
         
-        matrix.reverse()
+        # matrix.reverse()
         transpose()
+        
+        for i in range(n):
+            matrix[i].reverse()
         
