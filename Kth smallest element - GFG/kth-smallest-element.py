@@ -8,6 +8,7 @@ class Solution:
         r : ending index of the array i.e size-1
         k : find kth smallest element and return using this function
         '''
+        '''
         heapq.heapify(arr)
         
         while k:
@@ -16,6 +17,22 @@ class Solution:
                 return val
             
             k -= 1
+        '''
+        
+        max_heap = []
+        
+        for i in range(k):
+            heapq.heappush(max_heap, -1 * arr[i])
+        
+        i = k
+        while i < len(arr):
+            if arr[i] < -1 * max_heap[0]:
+                heapq.heappop(max_heap)
+                heapq.heappush(max_heap, -1 * arr[i])
+            
+            i += 1
+        
+        return -1 * max_heap[0]
 
 #{ 
  # Driver Code Starts
