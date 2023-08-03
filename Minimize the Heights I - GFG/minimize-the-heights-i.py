@@ -4,12 +4,12 @@ class Solution:
     def getMinDiff(self, arr, n, k):
         # code here
         arr.sort()
-        mini = min(arr)
-        maxi = max(arr)
-        res = maxi-mini
+        mini = arr[0]
+        maxi = arr[n - 1]
+        res = maxi - mini
         
         for i in range(1, n):
-            maxi = max(arr[n-1]-k, arr[i-1]+k)
+            maxi = max(arr[n-1] - k, arr[i-1] + k)
             mini = min(arr[0] + k, arr[i] - k)
             
             res = min(res, maxi-mini)
