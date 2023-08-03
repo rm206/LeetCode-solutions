@@ -9,13 +9,13 @@ class Solution:
         k : find kth smallest element and return using this function
         '''
         heapq.heapify(arr)
-        while k > 0:
-            k -=1
-            if k == 0:
-                return arr[0]
+        
+        while k:
+            val = heapq.heappop(arr)
+            if k == 1:
+                return val
             
-            heapq.heappop(arr)
-
+            k -= 1
 
 #{ 
  # Driver Code Starts
