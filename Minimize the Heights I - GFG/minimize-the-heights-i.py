@@ -4,17 +4,18 @@ class Solution:
     def getMinDiff(self, arr, n, k):
         # code here
         arr.sort()
-        mini = arr[0]
-        maxi = arr[n - 1]
-        res = maxi - mini
         
-        for i in range(1, n):
-            maxi = max(arr[n-1] - k, arr[i-1] + k)
-            mini = min(arr[0] + k, arr[i] - k)
+        small = arr[0]
+        big = arr[n-1]
+        diff = arr[n-1] - arr[0]
+        
+        for i in range(n - 1):
+            maxi = max(big - k, arr[i] + k)
+            mini = min(small + k, arr[i + 1] - k)
             
-            res = min(res, maxi-mini)
+            diff = min(diff, maxi - mini)
         
-        return res
+        return diff
 
 
 #{ 
