@@ -9,7 +9,7 @@ class Solution:
         def solver(node):
             
             if not node:
-                return [-1, True]
+                return [0, True]
             
             left_ht, left_bal = solver(node.left)
             right_ht, right_bal = solver(node.right)
