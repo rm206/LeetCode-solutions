@@ -12,11 +12,8 @@ class Solution:
         
         res = 0
         for i in range(len(s)):
-            if i < len(s) - 1:
-                if mapp[s[i]] < mapp[s[i + 1]]:
-                    res += -1 * mapp[s[i]]
-                else:
-                    res += mapp[s[i]]
+            if i < len(s) - 1 and mapp[s[i]] < mapp[s[i + 1]]:
+                res += -1 * mapp[s[i]]
             else:
                 res += mapp[s[i]]
         
