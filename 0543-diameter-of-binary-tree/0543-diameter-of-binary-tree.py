@@ -7,19 +7,19 @@
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         
-        def helper(node):
+        def solver(node):
             nonlocal res
-            if not node:
-                return -1
-        
-            left = helper(node.left)
-            right = helper(node.right)
             
-            res = max(res, 2 + left + right)
+            if not node:
+                return 0
+            
+            left = solver(node.left)
+            right = solver(node.right)
+            
+            res = max(res, left + right)
             
             return 1 + max(left, right)
         
         res = 0
-        helper(root)
-        
+        solver(root)
         return res
