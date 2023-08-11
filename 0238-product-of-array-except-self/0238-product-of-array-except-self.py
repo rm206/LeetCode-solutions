@@ -1,21 +1,19 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        len_nums = len(nums)
-        pre = [1 for i in range(len_nums)]
-        post = [1 for i in range(len_nums)]
+        l_mult = 1
+        left = []
+        for i in range(len(nums)):
+            left.append(l_mult)
+            l_mult *= nums[i]
         
-        running_mult = 1
-        for i in range(0, len_nums):
-            pre[i] = running_mult
-            running_mult *= nums[i]
+        r_mult = 1
+        right = [0 for _ in range(len(nums))]
+        for i in range(len(nums) - 1, -1, -1):
+            right[i] = r_mult
+            r_mult *= nums[i]
         
-        running_mult = 1
-        for i in range(len_nums - 1, -1, -1):
-            post[i] = running_mult
-            running_mult *= nums[i]
-
         res = []
-        for i in range(len_nums):
-            res.append(pre[i] * post[i])
+        for i in range(len(nums)):
+            res.append(left[i] * right[i])
         
         return res
