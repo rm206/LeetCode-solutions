@@ -1,5 +1,25 @@
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
+        
+        res = [None for i in range(len(nums))]
+        place_at = len(nums) - 1
+        l, r = 0, len(nums) - 1
+        
+        while l <= r:
+            val_l, val_r = abs(nums[l]), abs(nums[r])
+            
+            if val_l > val_r:
+                res[place_at] = pow(val_l, 2)
+                l += 1
+            else:
+                res[place_at] = pow(val_r, 2)
+                r -= 1
+            
+            place_at -= 1
+        
+        return res
+        
+        '''
         res = []
         mid = -1
         for i in range(len(nums)):
@@ -29,3 +49,4 @@ class Solution:
                 r += 1
         
         return res
+        '''
