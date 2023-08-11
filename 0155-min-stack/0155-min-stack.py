@@ -10,7 +10,6 @@ class MinStack:
             self.mins.append(val)
         else:
             to_add = min(val, self.mins[-1])
-            
             self.stack.append(val)
             self.mins.append(to_add)
 
