@@ -3,10 +3,11 @@ class Solution:
         if x < 0:
             return False
         
-        res = 0
-        temp = x
-        while temp != 0:
-            res = (res * 10) + (temp % 10)
-            temp = temp // 10
+        comp = []
         
-        return res == x
+        while x:
+            val = x % 10
+            comp.append(val)
+            x = x // 10
+        
+        return comp == comp[::-1]
