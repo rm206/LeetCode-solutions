@@ -1,21 +1,27 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         
-        def solver(i, cur, running_sum):
-            if running_sum == target:
-                res.append(cur.copy())
+        def dfs(i, run_sum, run_arr):            
+            if run_sum == target:
+                res.append(run_arr.copy())
                 return
             
-            if i >= len(candidates) or running_sum > target:
+            if run_sum > target:
                 return
             
-            cur.append(candidates[i])
-            solver(i, cur, running_sum + candidates[i])
+            if i >= len(candidates):
+                return
             
-            cur.pop()
-            solver(i + 1, cur, running_sum)
+            run_arr.append(candidates[i])
+            dfs(i, run_sum + candidates[i], run_arr)
+            
+            run_arr.pop()
+            dfs(i + 1, run_sum, run_arr)
         
-        
+        i = 0
+        run_sum = 0
         res = []
-        solver(0, [], 0)
+        run_arr = []
+        dfs(i, run_sum, run_arr)
+        
         return res
