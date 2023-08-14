@@ -6,10 +6,7 @@ class Solution:
                 res.append(run_arr.copy())
                 return
             
-            if run_sum > target:
-                return
-            
-            if i >= len(candidates):
+            if run_sum > target or i >= len(candidates):
                 return
             
             run_arr.append(candidates[i])
