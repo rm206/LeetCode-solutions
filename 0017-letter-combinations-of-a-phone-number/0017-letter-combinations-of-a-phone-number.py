@@ -1,28 +1,34 @@
 import copy
-
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        
-        def solver(i, running_str):
-            if i >= len(digits):
-                res.append(copy.copy(running_str))
-                return
-            
-            s = mapping[digits[i]]
-            
-            for letter in s:
-                running_str += letter
-                solver(i + 1, running_str)
-                running_str = running_str[:-1]
-                
-                
-                
         if digits == "":
             return []
-        mapping = {"2" : "abc", "3" : "def", "4" : "ghi", "5" : "jkl", "6" : "mno", "7" : "pqrs", "8" : "tuv", "9" : "wxyz"}
-        running_str = ""
+        
+        mapp = {'2' : "abc",
+               '3' : "def",
+               '4' : "ghi",
+               '5' : "jkl",
+               '6' : "mno",
+               '7' : "pqrs",
+               '8' : "tuv",
+               '9' : "wxyz"}
+        
+        def solver(i, curr):
+            # base case
+            if i == len(digits):
+                temp = copy.copy(curr)
+                res.append("".join(temp))
+                return
+            
+            s = mapp[digits[i]]
+            for l in range(len(s)):
+                curr.append(s[l]) 
+                solver(i + 1, curr)
+                curr.pop()
+        
         res = []
-        solver(0, running_str)
+        curr = []
+        i = 0
+        solver(i, curr)
         
         return res
-            
