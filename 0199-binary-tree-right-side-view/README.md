@@ -2,7 +2,7 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg" style="width: 401px; height: 301px;">
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg" style="width: 401px; height: 301px;" naptha_cursor="text">
 <pre><strong>Input:</strong> root = [1,2,3,null,5,null,4]
 <strong>Output:</strong> [1,3,4]
 </pre>
