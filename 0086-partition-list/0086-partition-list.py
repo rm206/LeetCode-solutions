@@ -12,13 +12,14 @@ class Solution:
         curr = head
         while curr:
             if curr.val < x:
-                curr1.next = ListNode(curr.val)
+                curr1.next = curr
                 curr1 = curr1.next
             else:
-                curr2.next = ListNode(curr.val)
+                curr2.next = curr
                 curr2 = curr2.next
             
             curr = curr.next
         
         curr1.next = dummy2.next
+        curr2.next = None
         return dummy1.next
