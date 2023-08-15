@@ -9,24 +9,22 @@ class Solution:
         if not root:
             return []
         
-        self.res = []
+        res = []
+        q = []
+        q.append(root)
         
-        def helper(node):
-            q = []
-            q.append(node)
-            
-            while len(q) != 0:
-                qlen = len(q)
-                level = []
+        while q:
+            level = []
+            len_q = len(q)
+            for i in range(len_q):
+                node = q.pop(0)
                 
-                for i in range(qlen):
-                    n = q.pop(0)
-                    if n:
-                        level.append(n.val)
-                        q.append(n.left)
-                        q.append(n.right)
-                if level:
-                    self.res.append(level[-1])                
+                level.append(node.val)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+                    
+            res.append(level[-1])
         
-        helper(root)
-        return self.res
+        return res
