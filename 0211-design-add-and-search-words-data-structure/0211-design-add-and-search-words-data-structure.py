@@ -1,75 +1,54 @@
 class TrieNode:
-    def __init__(self, ch):
-        self.data = ch
-        self.children = [None] * 26
-        self.is_terminal = False
-
+    def __init__(self, char):
+        self.data = char
+        self.children = [None for i in range(26)]
+        self.end = False
+    
 class WordDictionary:
 
     def __init__(self):
         self.root = TrieNode("")
 
-    def insert_util(self, root, word):
-        if len(word) == 0:
-            root.is_terminal = True
+    def add_util(self, word, root):
+        if word == "":
+            root.end = True
             return
         
         index = ord(word[0]) - ord('a')
-
-        if root.children[index]:
-            child = root.children[index]
-        else:
+        
+        if not root.children[index]:
             child = TrieNode(word[0])
             root.children[index] = child
+        else:
+            child = root.children[index]
         
-        self.insert_util(child, word[1:])
-
+        self.add_util(word[1 : ], child)
+    
     def addWord(self, word: str) -> None:
-        self.insert_util(self.root, word)
+        self.add_util(word, self.root)
 
-    def search_util(self, root, word):
-
-        if len(word) == 0:
-            return root.is_terminal
+    def search_util(self, word, root):
+        if word == "":
+            return root.end
         
         if word[0] == '.':
-            for child in root.children:
-                if child and self.search_util(child, word[1:]):
+            for i in range(26):
+                if root.children[i] and self.search_util(word[1 : ], root.children[i]):
                     return True
             return False
+                    
         else:
             index = ord(word[0]) - ord('a')
-
-            if root.children[index]:
-                child = root.children[index]
-            else:
+            if not root.children[index]:
                 return False
-            
-            return self.search_util(child, word[1:])
-
+            else:
+                return self.search_util(word[1 : ], root.children[index])
+    
     def search(self, word: str) -> bool:
-        return self.search_util(self.root, word)
+        return self.search_util(word, self.root)
 
 
 # Your WordDictionary object will be instantiated and called as such:
 # obj = WordDictionary()
 # obj.addWord(word)
 # param_2 = obj.search(word)
-
-'''
-    def search_util(self, root, word):
-        if len(word) == 0:
-            return root.is_terminal
-        
-        index = ord(word[0]) - ord('a')
-
-        if root.children[index]:
-            child = root.children[index]
-        else:
-            return False
-        
-        return self.search_util(child, word[1:])
-    
-    def search(self, word: str) -> bool:
-        return self.search_util(self.root, word)
-'''
