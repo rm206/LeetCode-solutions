@@ -6,18 +6,35 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        curr, stack = root, []
         
-        def inorder(node):
-            nonlocal k, res
-            if not node:
-                return
+        while curr or stack:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
             
-            inorder(node.left)
+            curr = stack.pop()
+            
             k -= 1
             if k == 0:
-                res = node.val
-            inorder(node.right)
-        
-        res = None
-        inorder(root)
-        return res
+                return curr.val
+            
+            curr = curr.right
+
+
+'''
+def inorder(node):
+    nonlocal k, res
+    if not node:
+        return
+
+    inorder(node.left)
+    k -= 1
+    if k == 0:
+        res = node.val
+    inorder(node.right)
+
+res = None
+inorder(root)
+return res
+'''
