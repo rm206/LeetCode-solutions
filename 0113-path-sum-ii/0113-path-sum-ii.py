@@ -12,21 +12,27 @@ class Solution:
             if not node:
                 return
             
-            if not node.left and not node.right:
-                curr.append(node.val)
-                run_sum += node.val
+#             if not node.left and not node.right:
+#                 curr.append(node.val)
+#                 run_sum += node.val
                 
-                if run_sum == targetSum:
-                    res.append(curr.copy())
+#                 if run_sum == targetSum:
+#                     res.append(curr.copy())
                 
-                run_sum -= node.val
-                curr.pop()
-                return
+#                 run_sum -= node.val
+#                 curr.pop()
+#                 return
             
             curr.append(node.val)
             run_sum += node.val
+            
             solver(node.left, curr, run_sum)
             solver(node.right, curr, run_sum)
+            
+            if not node.left and not node.right:
+                if run_sum == targetSum:
+                    res.append(curr.copy())
+            
             curr.pop()
             run_sum -= node.val
         
