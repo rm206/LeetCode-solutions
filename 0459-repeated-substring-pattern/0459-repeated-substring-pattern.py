@@ -9,10 +9,6 @@ class Solution:
         
         build = []
         for i in range(l - 1):
-            build.append([s[ : i + 1], l // (i + 1)])
-        
-        for string, length in build:
-            if string * length == s:
-                print("True on string : ", string)
+            if s[ : i + 1] * (l // (i + 1)) == s:
                 return True
         return False
