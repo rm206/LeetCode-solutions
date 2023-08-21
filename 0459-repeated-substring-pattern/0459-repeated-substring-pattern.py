@@ -6,9 +6,8 @@ class Solution:
         if l == 1:
             return False
         
-        
-        build = []
-        for i in range(l - 1):
-            if s[ : i + 1] * (l // (i + 1)) == s:
-                return True
+        for i in range(1, l // 2 + 1):
+            if l % i == 0:
+                if s[ : i] * (l // i) == s:
+                    return True
         return False
