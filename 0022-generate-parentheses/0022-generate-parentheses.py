@@ -1,23 +1,27 @@
+import copy
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        res = []
         
-        def helper(opening: int, closing: int, curr_str: str) -> None:
-            nonlocal res
-            nonlocal n
+        def helper(opening, closing, curr):
+            if opening == n and closing == n:
+                res.append(copy.copy(curr))
             
-            if opening == closing and opening == n:
-                res.append(curr_str)
+            if opening > n:
+                return 
+            
+            if closing > opening:
                 return
-            if opening < n:
-                curr_str += '('
-                helper(opening+1, closing, curr_str)
-                curr_str = curr_str[:-1]
-            if closing < opening:
-                curr_str += ')'
-                helper(opening, closing + 1, curr_str)
-                curr_str = curr_str[:-1]
-
+            
+            curr += '('
+            opening += 1
+            helper(opening, closing, curr)
+            
+            curr = curr[:-1]
+            opening -= 1
+            curr += ')'
+            closing += 1
+            helper(opening, closing, curr)
         
+        res = []
         helper(0, 0, "")
         return res
