@@ -6,13 +6,16 @@ class Solution:
         while l <= r:
             mid = (l + r) // 2
             
-            res = min(res, nums[mid])
-            if nums[l] <= nums[mid]:
+            if nums[l] <= nums[r]:
+                res = min(res, nums[l])
+                break
+            
+            elif nums[l] <= nums[mid]:
                 res = min(res, nums[l])
                 l = mid + 1
             
             elif nums[mid] <= nums[r]:
-                res = min(res, nums[r])
+                res = min(res, nums[mid])
                 r = mid - 1
         
         return res
