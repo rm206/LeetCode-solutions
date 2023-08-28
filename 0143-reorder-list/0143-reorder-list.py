@@ -54,4 +54,4 @@ class Solution:
         
         l2 = reverse_list(l2)
         l1 = merge(l1, l2)
-        head = l1
+        # head = l1
