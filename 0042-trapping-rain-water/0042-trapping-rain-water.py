@@ -3,25 +3,22 @@ class Solution:
         if len(height) < 3:
             return 0
         
-        left = [0 for i in range(len(height))]
-        right = [0 for i in range(len(height))]
-        left_max = height[0]
-        right_max = height[len(height) - 1]
+        h = len(height)
         
-        for i in range(1, len(height)):
-            left[i] = left_max
-            left_max = max(left_max, height[i])
+        left_max = [0 for i in range(h)]
+        l = height[0]
+        for i in range(1, h):
+            left_max[i] = l
+            l = max(l, height[i])
         
-        for i in range(len(height) - 2, -1, -1):
-            right[i] = right_max
-            right_max = max(right_max, height[i])
-        
-        mixed = [0 for i in range(len(height))]
-        for i in range(len(height)):
-            mixed[i] = max(0, min(left[i], right[i]) - height[i])
+        right_max = [0 for i in range(h)]
+        r = height[-1]
+        for i in range(h - 2, -1, -1):
+            right_max[i] = r
+            r = max(r, height[i])
         
         res = 0
-        for i in range(1, len(height) - 1):
-            res += mixed[i]
+        for i in range(h):
+            res += max(min(left_max[i], right_max[i]) - height[i], 0)
         
         return res
