@@ -48,7 +48,6 @@ res = []
 while heap or prev:
 
     if prev and not heap:
-        print("in")
         return ""
 
     cnt, char = heapq.heappop(heap)
