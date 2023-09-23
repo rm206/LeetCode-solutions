@@ -62,6 +62,5 @@ while heap or prev:
         prev = [cnt, char]
 
 res = "".join(res)
-print(res)
 return res
 '''
