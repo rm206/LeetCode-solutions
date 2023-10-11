@@ -14,22 +14,19 @@ class Solution:
     def isBalanced(self,root):
     
         #add code here
-        
-        def helper(node):
+        def solver(node):
             if not node:
-                return [True, 0]
-                
-            left_balanced, left_height = helper(node.left)
-            right_balanced, right_height = helper(node.right)
+                return [0, True]
             
-            balanced = left_balanced and right_balanced and abs(left_height - right_height) <= 1
+            ht_l, bal_l = solver(node.left)
+            ht_r, bal_r = solver(node.right)
             
-            return [balanced, 1 + max(left_height, right_height)]
+            bal = bal_l and bal_r and abs(ht_l - ht_r) <= 1
+            ht = 1 + max(ht_l, ht_r)
+            
+            return [ht, bal]
         
-        return helper(root)[0]
-
-
-
+        return solver(root)[1]
 
 #{ 
  # Driver Code Starts
