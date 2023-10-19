@@ -3,18 +3,26 @@
 class Solution:
     def findTwoElement( self,arr, n): 
         # code here
-        s = set()
-        for i in range(1, n + 1):
-            s.add(i)
+        expected_sum = (n * (n + 1)) // 2
+        set_sum = sum(set(arr))
+        actual_sum = sum(arr)
         
-        for i in arr:
-            if i not in s:
-                A = i
-            else:
-                s.remove(i)
-        B = s.pop()
-        
-        return [A, B]
+        return [actual_sum - set_sum, expected_sum - set_sum]
+
+'''
+s = set()
+for i in range(1, n + 1):
+    s.add(i)
+
+for i in arr:
+    if i not in s:
+        A = i
+    else:
+        s.remove(i)
+B = s.pop()
+
+return [A, B]
+'''
 
 #{ 
  # Driver Code Starts
