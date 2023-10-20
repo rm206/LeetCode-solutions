@@ -12,39 +12,33 @@ class Solution:
     #Function to store the zig zag order traversal of tree in a list.
     def zigZagTraversal(self, root):
         #Add Your code here
-        self.res = []
-        self.turn = 1
         
-        def helper(node):
-            q = []
-            q.append(node)
+        turn = 1
+        res = []
+        q = []
+        q.append(root)
+        
+        while q:
+            lenq = len(q)
+            level = []
+            for i in range(lenq):
+                node = q.pop(0)
+                level.append(node.data)
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
             
-            while len(q) != 0:
-                qlen = len(q)
-                level = []
-                
-                for i in range(qlen):
-                    n = q.pop(0)
-                    
-                    if n.left:
-                        q.append(n.left)
-                    if n.right:
-                        q.append(n.right)
-                    
-                    level.append(n.data)
-                
-                if self.turn == 1:
-                    for val in level:
-                        self.res.append(val)
-                else:
-                    for val in level[::-1]:
-                        self.res.append(val)
-                self.turn *= -1
+            if turn == -1:
+                level.reverse()
+            
+            for j in level:
+                res.append(j)
+            
+            turn *= -1
         
-        helper(root)
-        return self.res
-
-
+        return res
+        
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
