@@ -3,7 +3,8 @@ class Solution:
         
         def builder(n, s):
             if len(s) == n:
-                res.append(s)
+                if s not in set_nums:
+                    res.append(s)
                 return
             
             s += '0'
@@ -11,8 +12,10 @@ class Solution:
             s = s[:-1]
             s += '1'
             builder(n, s)
+            s = s[:-1]
         
         res = []
+        set_nums = set(nums)
         builder(len(nums[0]), "")
         
-        return list(set(res) - set(nums))[0]
+        return res[0]
