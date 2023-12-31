@@ -1,17 +1,18 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        ls, lt = len(s), len(t)
+        ls = len(s)
+        lt = len(t)
         
         if ls > lt:
             return False
         
-        s_ptr, t_ptr = 0, 0
+        p1, p2 = 0, 0
         
-        while s_ptr < ls and t_ptr < lt:
-            
-            if s[s_ptr] == t[t_ptr]:
-                s_ptr += 1
-            
-            t_ptr += 1
+        while p1 < ls and p2 < lt:
+            if s[p1] == t[p2]:
+                p1 += 1
+                p2 += 1
+            else:
+                p2 += 1
         
-        return s_ptr == ls
+        return p1 == ls
