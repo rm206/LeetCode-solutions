@@ -1,7 +1,7 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        real_sum = sum(nums)
+        xor_sum = 0
         n = len(nums)
-        expected_sum = (n * (n + 1)) // 2
-        
-        return expected_sum - real_sum
+        for i in range(n):
+            xor_sum ^= i ^ nums[i]
+        return xor_sum ^ n
