@@ -5,5 +5,5 @@ class Solution:
             if n in s:
                 return True
             s.add(n)
-        
+
         return False
