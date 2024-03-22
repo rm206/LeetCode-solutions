@@ -5,4 +5,4 @@ class Solution:
         if n <= 0:
             return False
         
-        return round(math.log(n ,2), 10) == int(math.log(n ,2))
+        return n & (n-1) == 0
