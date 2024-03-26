@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/peak-index-in-a-mountain-array/">852. Peak Index in a Mountain Array</a></h2><h3>Medium</h3><hr><div><p>An array <code>arr</code> a <strong>mountain</strong> if the following properties hold:</p>
+<h2><a href="https://leetcode.com/problems/peak-index-in-a-mountain-array/">852. Peak Index in a Mountain Array</a></h2><h3>Medium</h3><hr><div><p>An array <code>arr</code> is a <strong>mountain</strong> if the following properties hold:</p>
 
 <ul>
 	<li><code>arr.length &gt;= 3</code></li>
