@@ -1,46 +1,38 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
+        m, n = len(board), len(board[0])
+        visited = set()
+        dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         
-        def is_safe(row, col):
-            return row >= 0 and row < m and col >= 0 and col < n and visited[row][col] == 0
+        def is_safe(row, col, curr_index):
+            return row >= 0 and row < m and col >= 0 and col < n and (row, col) not in visited and board[row][col] == word[curr_index]
         
-        def solver(index, i, j):
-            if index == word_len - 1:
+        def find_word(row, col, curr_str, curr_index):
+            curr_str += board[row][col]
+            visited.add((row, col))
+            
+            if curr_str == word:
                 return True
             
-            visited[i][j] = 1
+            found_one_valid_move = False
             
-            if is_safe(i - 1, j) and board[i - 1][j] == word[index + 1]:
-                word_in_up = solver(index + 1, i - 1, j)
-                if word_in_up:
-                    return True
+            for move in dirs:
+                if is_safe(row+move[0], col+move[1], curr_index + 1):
+                    found_one_valid_move = True
+                    res = find_word(row+move[0], col+move[1], curr_str, curr_index + 1)
+                    if res:
+                        return res
             
-            if is_safe(i + 1, j) and board[i + 1][j] == word[index + 1]:
-                word_in_down = solver(index + 1, i + 1, j)
-                if word_in_down:
-                    return True
+            visited.remove((row, col))
             
-            if is_safe(i, j - 1) and board[i][j - 1] == word[index + 1]:
-                word_in_left = solver(index + 1, i, j - 1)
-                if word_in_left:
-                    return True
-            
-            if is_safe(i, j + 1) and board[i][j + 1] == word[index + 1]:
-                word_in_right = solver(index + 1, i, j + 1)
-                if word_in_right:
-                    return True
-            
-            visited[i][j] = 0
-            
-            return False
+            if not found_one_valid_move:
+                return False
+            return res
         
-        word_len = len(word)
-        m, n = len(board), len(board[0])
-        visited = [[0 for row in range(n)] for j in range(m)]
+        word_found = False
         for row in range(m):
             for col in range(n):
                 if board[row][col] == word[0]:
-                    found_with_curr_start_index = solver(0, row, col)
-                    if found_with_curr_start_index:
-                        return True
-        return False
+                    word_found = word_found or find_word(row, col, "", 0)
+        
+        return word_found
