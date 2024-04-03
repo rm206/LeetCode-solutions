@@ -9,30 +9,30 @@ class Solution:
         
         def find_word(row, col, curr_str, curr_index):
             curr_str += board[row][col]
-            visited.add((row, col))
             
             if curr_str == word:
                 return True
             
-            found_one_valid_move = False
+            if len(curr_str) > len(word):
+                return
+            
+            visited.add((row, col))            
             
             for move in dirs:
                 if is_safe(row+move[0], col+move[1], curr_index + 1):
-                    found_one_valid_move = True
                     res = find_word(row+move[0], col+move[1], curr_str, curr_index + 1)
                     if res:
                         return res
             
             visited.remove((row, col))
             
-            if not found_one_valid_move:
-                return False
-            return res
+            return False
         
-        word_found = False
         for row in range(m):
             for col in range(n):
                 if board[row][col] == word[0]:
-                    word_found = word_found or find_word(row, col, "", 0)
+                    word_found = find_word(row, col, "", 0)
+                    if word_found:
+                        return True
         
-        return word_found
+        return False
