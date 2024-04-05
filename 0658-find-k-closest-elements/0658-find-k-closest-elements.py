@@ -1,28 +1,34 @@
-import heapq
-from collections import defaultdict
-
 class Solution:
     def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        l, r = 0, len(arr) - 1
         
-        min_heap = []
-        d = defaultdict(list)
+        res_i = 0
         
-        for num in arr:
-            heapq.heappush(min_heap, abs(num - x))
-            d[abs(num - x)].append(num)
+        while l <= r:
+            mid = (l + r) // 2
+            
+            curr_diff, res_diff = abs(arr[mid] - x), abs(arr[res_i] - x)
+            
+            if curr_diff < res_diff or (curr_diff == res_diff and arr[mid] < arr[res_i]):
+                res_i = mid
+            
+            if arr[mid] > x:
+                r = mid - 1
+            
+            elif arr[mid] < x:
+                l = mid + 1
+            
+            else:
+                break
         
-        res = []
-        visited = set()
+        l, r = res_i, res_i
         
-        while k:
-            diff = heapq.heappop(min_heap)
-            if diff in visited:
-                continue
-            visited.add(diff)
-            for num in d[diff]:
-                if k:
-                    res.append(num)
-                    k -= 1
+        for i in range(k - 1):
+            if l == 0:
+                r += 1
+            elif r == len(arr) - 1 or abs(x - arr[l - 1]) <= abs(x - arr[r + 1]):
+                l -= 1
+            else:
+                r += 1
         
-        res.sort()
-        return res
+        return arr[l : r + 1]
