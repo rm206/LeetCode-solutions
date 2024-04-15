@@ -18,10 +18,8 @@ class Solution:
             if node.left:
                 solver(node.left, curr)
             if node.right:
-                solver(node.right, curr)
+                solver(node.right, curr)  
             
-            
-        
         res = 0
         solver(root, 0)
         return res
