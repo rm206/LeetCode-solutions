@@ -9,7 +9,7 @@ class Solution:
         def solver(node, prev):
             nonlocal res
             
-            curr = prev + str(node.val)
+            curr = prev*10 + node.val
             
             if not node.left and not node.right:
                 res += int(curr)
@@ -23,5 +23,5 @@ class Solution:
             
         
         res = 0
-        solver(root, "")
+        solver(root, 0)
         return res
