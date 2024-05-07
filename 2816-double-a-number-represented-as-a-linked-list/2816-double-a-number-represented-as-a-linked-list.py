@@ -5,40 +5,16 @@
 #         self.next = next
 class Solution:
     def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        def reverse_list():
-            prev, curr = None, head
+        if head.val > 4:
+            head = ListNode(0, head)
+        
+        curr = head
+        while curr:
+            curr.val = (curr.val * 2) % 10
 
-            while curr:
-                temp = curr.next
-                curr.next = prev
-                prev = curr
-                curr = temp
+            if curr.next and curr.next.val > 4:
+                curr.val += 1
             
-            return prev
-
-        num = 0
-        curr = head
-        while curr:
-            num = num*10 + curr.val
             curr = curr.next
         
-        num = num * 2
-        
-        head = reverse_list()
-
-        curr = head
-        prev = None
-        while curr:
-            curr.val = num % 10
-            prev = curr
-            curr = curr.next
-            num = num // 10
-        
-        while num:
-            prev.next = ListNode(num % 10)
-            prev = prev.next
-            num = num // 10
-        
-        head = reverse_list()
-
         return head
