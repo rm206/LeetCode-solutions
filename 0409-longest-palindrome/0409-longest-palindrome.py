@@ -1,16 +1,19 @@
 class Solution:
     def longestPalindrome(self, s: str) -> int:
-        st = set()
-        cnt = 0
-        
+        d = {}
         for c in s:
-            if c in st:
-                st.remove(c)
-                cnt += 2
-            else:
-                st.add(c)
+            d[c] = 1 + d.get(c, 0)
         
-        if len(st) == 0:
-            return cnt
-        else:
-            return cnt + 1
+        res = 0
+        for k, v in d.items():
+            if v >= 2:
+                while d[k] > 1:
+                    res += 2
+                    d[k] -= 2
+        
+        for k, v in d.items():
+            if v == 1:
+                res += 1
+                break
+        
+        return res
