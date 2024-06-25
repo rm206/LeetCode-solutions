@@ -6,34 +6,19 @@
 #         self.right = right
 class Solution:
     def bstToGst(self, root: TreeNode) -> TreeNode:
-        def reverse_inorder(node):
-            if not node:
-                return
-            
-            reverse_inorder(node.right)
-            nums.append(node.val)
-            reverse_inorder(node.left)
-        
-        nums = []
-        reverse_inorder(root)
-        
-        ctr = 0
-        builder = []
-        for n in nums:
-            ctr += n
-            builder.append(ctr)
-        
-        d = {}
-        for i in range(len(nums)):
-            d[nums[i]] = builder[i]
-        
         def process(node):
+            nonlocal curr_sum
             if not node:
                 return
             
-            node.val = d[node.val]
-            process(node.left)
             process(node.right)
+
+            curr_sum += node.val
+            node.val = curr_sum
+
+            process(node.left)
         
+        curr_sum = 0
         process(root)
+
         return root
