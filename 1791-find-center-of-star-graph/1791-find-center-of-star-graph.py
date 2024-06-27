@@ -1,12 +1,8 @@
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
-        d = {}
+        e1, e2 = edges[0], edges[1]
 
-        for n1, n2 in edges:
-            d[n1] = 1 + d.get(n1, 0)
-            d[n2] = 1 + d.get(n2, 0)
-        
-        n = len(d)
-        for k, v in d.items():
-            if v == n - 1:
-                return k
+        if e1[0] in e2:
+            return e1[0]
+        else:
+            return e1[1]
