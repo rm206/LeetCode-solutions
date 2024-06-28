@@ -11,14 +11,19 @@ class Solution:
         for k, v in d.items():
             heapq.heappush(heap, [-v, k])
         
-        d = {}
-        while n and heap:
-            degree, node = heapq.heappop(heap)
-            d[node] = n
-            n -= 1
+        # d = {}
+        # while n and heap:
+        #     degree, node = heapq.heappop(heap)
+        #     d[node] = n
+        #     n -= 1
         
+        # res = 0
+        # for e1, e2 in roads:
+        #     res += (d[e1] + d[e2])
         res = 0
-        for e1, e2 in roads:
-            res += (d[e1] + d[e2])
+        while heap:
+            degree, _ = heapq.heappop(heap)
+            res += -degree * n
+            n -= 1
         
         return res
