@@ -1,16 +1,14 @@
 class Solution:
     def removeOccurrences(self, s: str, part: str) -> str:
-        part_len = len(part)
-        n = len(s)
         i = 0
-        
-        while i < n:
-            if i + part_len - 1 < n and s[i : i + part_len] == part:
-                temp = s[ : i] + s[i + part_len : ]
-                s = temp
-                n -= part_len
-                i = 0
+        p_len = len(part)
+        s_len = len(s)
+
+        while i < s_len:
+            if i + p_len <= s_len and s[i : i + p_len] == part:
+                s = s[ : i] + s[i + p_len : ]
+                i = max(i - p_len, 0)
+                s_len -= p_len
             else:
                 i += 1
-        
         return s
