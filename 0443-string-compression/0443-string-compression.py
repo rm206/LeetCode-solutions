@@ -1,21 +1,32 @@
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        n = len(chars)
-        i = 0 
-        s = []
+        res = ""
+        res_len = 0
+        ctr = 0
+        curr = chars[0]
+
+        for c in chars:
+            if c == curr:
+                ctr += 1
+            else:
+                if ctr == 1:
+                    res = res + curr
+                    res_len += 1
+                else:
+                    res = res + curr + str(ctr)
+                    res_len += 1 + len(str(ctr))
+                curr = c
+                ctr = 1
+        if ctr == 1:
+            res = res + curr
+            res_len += 1
+        else:
+            res = res + curr + str(ctr)
+            res_len += 1 + len(str(ctr))
         
-        while i < n:
-            c = chars[i]
-            counter = 0
-            
-            while i < n and chars[i] == c:
-                counter += 1
-                i += 1
-            
-            s.append(c)
-            if counter > 1:
-                s.extend(list(str(counter)))
+        i = 0
+        for c in res:
+            chars[i] = c
+            i += 1
         
-        for i in range(len(s)):
-            chars[i] = s[i]
-        return len(s)
+        return res_len
