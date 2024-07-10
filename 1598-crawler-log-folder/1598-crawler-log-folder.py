@@ -1,23 +1,38 @@
 class Solution:
     def minOperations(self, logs: List[str]) -> int:
-        stack = ["main"]
-
+        depth = 0
         for op in logs:
             if op == "../":
-                if stack[-1] == "main":
+                if depth == 0:
                     pass
                 else:
-                    stack.pop()
+                    depth -= 1
             
             elif op == "./":
                 pass
             
             else:
-                stack.append(op)
+                depth += 1
         
-        res = 0
-        while stack[-1] != "main":
-            stack.pop()
-            res += 1
+        return depth
+        # stack = ["main"]
+
+        # for op in logs:
+        #     if op == "../":
+        #         if stack[-1] == "main":
+        #             pass
+        #         else:
+        #             stack.pop()
+            
+        #     elif op == "./":
+        #         pass
+            
+        #     else:
+        #         stack.append(op)
         
-        return res
+        # res = 0
+        # while stack[-1] != "main":
+        #     stack.pop()
+        #     res += 1
+        
+        # return res
