@@ -25,15 +25,4 @@ class Solution:
             left = left.next
             right = right.next
         
-        return True
-        
-'''
-comp = []
-p = head
-
-while p:
-    comp.append(p.val)
-    p = p.next
-
-return comp == comp[::-1]
-'''
+        return True    
