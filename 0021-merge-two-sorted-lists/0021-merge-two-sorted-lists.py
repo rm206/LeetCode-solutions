@@ -7,17 +7,18 @@ class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         curr = dummy
-        
-        while list1 or list2:
-            v1 = list1.val if list1 else float('inf')
-            v2 = list2.val if list2 else float('inf')
-            
+        c1, c2 = list1, list2
+
+        while c1 or c2:
+            v1 = c1.val if c1 else math.inf
+            v2 = c2.val if c2 else math.inf
+
             if v1 < v2:
-                curr.next = list1
-                list1 = list1.next
+                curr.next = c1
+                c1 = c1.next
             else:
-                curr.next = list2
-                list2 = list2.next
+                curr.next = c2
+                c2 = c2.next
             
             curr = curr.next
         
