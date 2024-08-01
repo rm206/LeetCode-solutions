@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [2727-number-of-senior-citizens](https://github.com/rm206/LeetCode-solutions/tree/master/2727-number-of-senior-citizens) |
 ## Hash Table
 |  |
 | ------- |
@@ -81,4 +82,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
+## String
+|  |
+| ------- |
+| [2727-number-of-senior-citizens](https://github.com/rm206/LeetCode-solutions/tree/master/2727-number-of-senior-citizens) |
 <!---LeetCode Topics End-->
