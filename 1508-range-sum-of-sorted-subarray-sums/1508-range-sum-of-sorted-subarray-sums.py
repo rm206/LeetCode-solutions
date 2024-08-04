@@ -3,9 +3,8 @@ class Solution:
         temp = []
 
         for i in range(n):
-            tsum = nums[i]
-            temp.append(tsum)
-            for j in range(i+1, n):
+            tsum = 0
+            for j in range(i, n):
                 tsum += nums[j]
                 temp.append(tsum)
 
