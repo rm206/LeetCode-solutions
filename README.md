@@ -78,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/rm206/LeetCode-solutions/tree/master/0225-implement-stack-using-queues) |
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
 ## Recursion
 |  |
@@ -90,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Queue
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/rm206/LeetCode-solutions/tree/master/0225-implement-stack-using-queues) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 ## Sliding Window
 |  |
@@ -103,4 +105,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
+## Design
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/rm206/LeetCode-solutions/tree/master/0225-implement-stack-using-queues) |
 <!---LeetCode Topics End-->
