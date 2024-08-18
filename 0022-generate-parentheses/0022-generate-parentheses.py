@@ -1,27 +1,18 @@
 import copy
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        
-        def helper(opening, closing, curr):
-            if opening == n and closing == n:
+        def solver(curr, curr_len, openb, closedb):
+            if openb == closedb and openb == n:
                 res.append(copy.copy(curr))
-            
-            if opening > n:
-                return 
-            
-            if closing > opening:
                 return
             
-            curr += '('
-            opening += 1
-            helper(opening, closing, curr)
+            if openb < n:
+                solver(curr+"(", curr_len+1, openb+1, closedb)
             
-            curr = curr[:-1]
-            opening -= 1
-            curr += ')'
-            closing += 1
-            helper(opening, closing, curr)
+            if closedb < openb:
+                solver(curr+")", curr_len+1, openb, closedb+1)
         
         res = []
-        helper(0, 0, "")
+        solver("", 0, 0, 0)
         return res
