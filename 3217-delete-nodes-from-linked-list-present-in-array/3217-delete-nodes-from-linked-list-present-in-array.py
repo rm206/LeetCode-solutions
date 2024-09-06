@@ -12,9 +12,9 @@ class Solution:
         while curr:
             if curr.val in nums:
                 prev.next = curr.next
-                curr = curr.next
             else:
                 prev = prev.next
-                curr = curr.next
+            
+            curr = curr.next
         
         return dummy.next
