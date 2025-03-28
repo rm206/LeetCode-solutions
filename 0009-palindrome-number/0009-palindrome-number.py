@@ -1,27 +1,16 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
-            return False
-        
+            sign = -1
+            x *= -1
+        else:
+            sign = 1
+
         rev = 0
-        n = x
-        
-        while n:
-            rev = (rev * 10) + (n % 10)
-            n = n // 10
-        
-        return rev == x
-        
-'''
-if x < 0:
-    return False
+        cx = x
 
-comp = []
-
-while x:
-    val = x % 10
-    comp.append(val)
-    x = x // 10
-
-return comp == comp[::-1]
-'''
+        while cx:
+            rev = (rev * 10) + (cx % 10)
+            cx = cx // 10
+        
+        return sign * rev == x
