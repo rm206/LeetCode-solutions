@@ -8,7 +8,7 @@ class Solution:
                 curr += 1
                 res = max(res, curr)
             else:
-                res = max(res, curr)
+                # res = max(res, curr)
                 curr = 0
         
         return res
