@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0189-rotate-array](https://github.com/rm206/LeetCode-solutions/tree/master/0189-rotate-array) |
 | [0200-number-of-islands](https://github.com/rm206/LeetCode-solutions/tree/master/0200-number-of-islands) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/rm206/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
@@ -38,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/rm206/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Two Pointers
 |  |
@@ -51,12 +53,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 ## Sorting
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Depth-First Search
 |  |
@@ -120,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [1435-xor-queries-of-a-subarray](https://github.com/rm206/LeetCode-solutions/tree/master/1435-xor-queries-of-a-subarray) |
 ## Prefix Sum
 |  |
@@ -130,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0007-reverse-integer](https://github.com/rm206/LeetCode-solutions/tree/master/0007-reverse-integer) |
 | [0189-rotate-array](https://github.com/rm206/LeetCode-solutions/tree/master/0189-rotate-array) |
+| [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Dynamic Programming
 |  |
