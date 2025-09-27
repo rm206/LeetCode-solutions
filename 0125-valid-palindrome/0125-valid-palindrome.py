@@ -8,7 +8,7 @@ class Solution:
             while i < j and not s[j].isalnum():
                 j -= 1
             
-            if i< j and s[i].lower() != s[j].lower():
+            if i < j and s[i].lower() != s[j].lower():
                 return False
             
             i += 1
