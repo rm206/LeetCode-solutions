@@ -15,8 +15,4 @@ class Solution:
         for c in t:
             chars[ord(c)-ord('a')] -= 1
         
-        for n in chars:
-            if n != 0:
-                return False
-        
-        return True
+        return chars == ([0] * 26)
