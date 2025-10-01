@@ -3,23 +3,22 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+import math
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode()
-        curr = dummy
-        c1, c2 = list1, list2
+        temp = ListNode()
+        curr = temp
 
-        while c1 or c2:
-            v1 = c1.val if c1 else math.inf
-            v2 = c2.val if c2 else math.inf
+        while list1 or list2:
+            val1 = list1.val if list1 else math.inf
+            val2 = list2.val if list2 else math.inf
 
-            if v1 < v2:
-                curr.next = c1
-                c1 = c1.next
+            if val1 < val2:
+                curr.next = list1
+                list1 = list1.next
             else:
-                curr.next = c2
-                c2 = c2.next
-            
+                curr.next = list2
+                list2 = list2.next
             curr = curr.next
         
-        return dummy.next
+        return temp.next
