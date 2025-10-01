@@ -6,13 +6,15 @@
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        def solver(node):
+        def dfs(node, curr):
+            nonlocal res
             if not node:
-                return 0
+                return
             
-            left = solver(node.left)
-            right = solver(node.right)
-            
-            return 1 + max(left, right)
+            res = max(res, curr)
+            dfs(node.left, curr + 1)
+            dfs(node.right, curr + 1)
         
-        return solver(root)
+        res = 0
+        dfs(root, 1)
+        return res
