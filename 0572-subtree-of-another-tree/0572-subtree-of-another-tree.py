@@ -7,42 +7,24 @@
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         
-        def is_same_tree(s, t):
-            if not s and not t:
+        def check_subtree(node1, node2):
+            if not node1 and not node2:
                 return True
-            
-            if (s and not t) or (not s and t):
+            if (node1 and not node2) or (not node1 and node2):
+                return False
+            if node1.val == node2.val and check_subtree(node1.left, node2.left) and check_subtree(node1.right, node2.right):
+                return True
+            else:
+                return False
+        
+        def dfs(node):
+            nonlocal subRoot
+            if not node:
                 return False
             
-            return s.val == t.val and is_same_tree(s.left, t.left) and is_same_tree(s.right, t.right)
+            if check_subtree(node, subRoot):
+                return True
+            
+            return dfs(node.left) or dfs(node.right)
         
-        if not subRoot and root:
-            return True
-        
-        elif subRoot and not root:
-            return False
-        
-        return is_same_tree(root, subRoot) or self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
-
-'''
-def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-
-    if not subRoot and root:
-        return True
-
-    elif subRoot and not root:
-        return False
-
-    return self.isSameTree(root, subRoot) or self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot) 
-
-def isSameTree(self, s, t):
-
-    if not s and not t:
-        return True
-
-    elif (not s and t) or (s and not t):
-        return False
-
-    else:
-        return s.val == t.val and self.isSameTree(s.left, t.left) and self.isSameTree(s.right, t.right)
-'''
+        return dfs(root)
