@@ -91,11 +91,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/rm206/LeetCode-solutions/tree/master/0200-number-of-islands) |
+| [0226-invert-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0226-invert-binary-tree) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/rm206/LeetCode-solutions/tree/master/0200-number-of-islands) |
+| [0226-invert-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0226-invert-binary-tree) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 ## Union Find
 |  |
@@ -213,4 +215,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
