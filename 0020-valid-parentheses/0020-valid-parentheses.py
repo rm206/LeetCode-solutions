@@ -15,5 +15,4 @@ class Solution:
                 else:
                     return False
         
-        print(stack)
         return stack == []
