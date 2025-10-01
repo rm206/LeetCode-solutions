@@ -8,49 +8,43 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        def reverse_list(head):
-            prev, curr = None, head
+        def reverse_list(node):
+            prev, curr= None, node
             while curr:
                 temp = curr.next
                 curr.next = prev
                 prev = curr
                 curr = temp
-            
             return prev
         
-        def merge(l1, l2):
-            dummy = ListNode()
-            curr = dummy
-            turn = 1
-            
-            while l1 and l2:
-                if turn == 1:
-                    curr.next = l1
-                    l1 = l1.next
-                else:
-                    curr.next = l2
-                    l2 = l2.next
-                curr = curr.next
-                turn *= -1
-            
-            if l1:
-                curr.next = l1
-            if l2:
-                curr.next = l2
-                
-            return dummy.next
-            
-        if not head.next:
-            return head
-        
+        if not head or not head.next:
+            return None
         slow, fast = head, head
+        prev = None
         while fast and fast.next:
+            prev = slow
             slow = slow.next
             fast = fast.next.next
         
-        l2 = slow.next
-        slow.next = None
-        l1 = head
+        prev.next = None
+        second_list = reverse_list(slow)
+
+        temp = ListNode()
+        curr = temp
+        p1, p2 = head, second_list
+        turn = 1
+
+        while p1 and p2:
+            if turn == 1:
+                curr.next = p1
+                p1 = p1.next
+            else:
+                curr.next = p2
+                p2 = p2.next
+            turn *= -1
+            curr = curr.next
         
-        l2 = reverse_list(l2)
-        l1 = merge(l1, l2)
+        if p1:
+            curr.next = p1
+        if p2:
+            curr.next = p2
