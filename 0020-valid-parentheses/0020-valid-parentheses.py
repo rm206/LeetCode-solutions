@@ -6,22 +6,12 @@ class Solution:
             if c in "({[":
                 stack.append(c)
             else:
-                if c == ")":
-                    if stack and stack[-1] == "(":
-                        stack.pop()
-                    else:
-                        return False
-                elif c == "}":
-                    if stack and stack[-1] == "{":
-                        stack.pop()
-                    else:
-                        return False
+                if not stack:
+                    return False
+                if (c == ")" and stack[-1] != "(") or (c == "}" and stack[-1] != "{") or (c == "]" and stack[-1] != "["):
+                    return False
                 else:
-                    if stack and stack[-1] == "[":
-                        stack.pop()
-                    else:
-                        return False
+                    stack.pop()
         
-        if stack:
-            return False
-        return True
+        print(stack)
+        return stack == []
