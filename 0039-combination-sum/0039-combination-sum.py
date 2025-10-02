@@ -1,24 +1,19 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        
-        def dfs(i, run_sum, run_arr):            
-            if run_sum == target:
-                res.append(run_arr.copy())
+        def builder(i, curr_sum, curr_arr):
+            nonlocal res
+
+            if curr_sum > target or i >= len(candidates):
                 return
             
-            if run_sum > target or i >= len(candidates):
+            if curr_sum == target:
+                res.append(curr_arr.copy())
                 return
             
-            run_arr.append(candidates[i])
-            dfs(i, run_sum + candidates[i], run_arr)
-            
-            run_arr.pop()
-            dfs(i + 1, run_sum, run_arr)
+            builder(i, curr_sum+candidates[i], curr_arr+[candidates[i]])
+
+            builder(i+1, curr_sum, curr_arr)
         
-        i = 0
-        run_sum = 0
         res = []
-        run_arr = []
-        dfs(i, run_sum, run_arr)
-        
+        builder(0, 0, [])
         return res
