@@ -6,9 +6,12 @@ class Solution:
         while l <= r:
             mid = (l+r) // 2
 
-            if nums[l] <= nums[mid] >= nums[r] or nums[l] <= nums[mid] <= nums[r]:
+            if nums[l] <= nums[mid] >= nums[r]:
                 res = min(res, nums[l])
                 l = mid + 1
+            elif nums[l] <= nums[mid] <= nums[r]:
+                res = min(res, nums[l])
+                r = mid - 1
             else: # nums[mid] <= nums[r]
                 res = min(res, nums[mid])
                 r = mid - 1
