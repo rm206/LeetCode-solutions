@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/rm206/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/rm206/LeetCode-solutions/tree/master/0049-group-anagrams) |
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/rm206/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/rm206/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/rm206/LeetCode-solutions/tree/master/0136-single-number) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -205,6 +206,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/rm206/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Memoization
 |  |
