@@ -9,9 +9,9 @@ class Solution:
             if nums[l] <= nums[mid] >= nums[r]:
                 res = min(res, nums[l])
                 l = mid + 1
-            elif nums[l] <= nums[mid] <= nums[r]:
-                res = min(res, nums[l])
-                r = mid - 1
+            # elif nums[l] <= nums[mid] <= nums[r]:
+            #     res = min(res, nums[l])
+            #     r = mid - 1
             else: # nums[mid] <= nums[r]
                 res = min(res, nums[mid])
                 r = mid - 1
