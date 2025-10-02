@@ -6,7 +6,7 @@ class Solution:
         while l <= r:
             mid = (l+r) // 2
 
-            if nums[l] <= nums[mid] >= nums[r]:
+            if nums[l] <= nums[mid]:
                 res = min(res, nums[l])
                 l = mid + 1
             else: # sorted already
