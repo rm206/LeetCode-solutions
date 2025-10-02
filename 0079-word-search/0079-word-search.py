@@ -1,38 +1,39 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
-        m, n = len(board), len(board[0])
+        
+        ROWS, COLS = len(board), len(board[0])
         visited = set()
-        dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
-        
-        def is_safe(row, col, curr_index):
-            return row >= 0 and row < m and col >= 0 and col < n and (row, col) not in visited and board[row][col] == word[curr_index]
-        
-        def find_word(row, col, curr_str, curr_index):
-            curr_str += board[row][col]
-            
-            if curr_str == word:
+
+        def search(r, c, index):
+            if index == len(word):
                 return True
             
-            if len(curr_str) > len(word):
-                return
+            visited.add((r, c))
+
+            if (r-1 >= 0 and board[r-1][c] == word[index] and (r-1, c) not in visited):
+                if search(r-1, c, index+1):
+                    return True
             
-            visited.add((row, col))            
+            if (r+1 < ROWS and board[r+1][c] == word[index] and (r+1, c) not in visited):
+                if search(r+1, c, index+1):
+                    return True
             
-            for move in dirs:
-                if is_safe(row+move[0], col+move[1], curr_index + 1):
-                    res = find_word(row+move[0], col+move[1], curr_str, curr_index + 1)
-                    if res:
-                        return res
+            if (c-1 >= 0 and board[r][c-1] == word[index] and (r, c-1) not in visited):
+                if search(r, c-1, index+1):
+                    return True
             
-            visited.remove((row, col))
+            if (c+1 < COLS and board[r][c+1] == word[index] and (r, c+1) not in visited):
+                if search(r, c+1, index+1):
+                    return True
             
+            visited.remove((r, c))
+
             return False
-        
-        for row in range(m):
-            for col in range(n):
-                if board[row][col] == word[0]:
-                    word_found = find_word(row, col, "", 0)
-                    if word_found:
+
+        for i in range(ROWS):
+            for j in range(COLS):
+                if board[i][j] == word[0]:
+                    if search(i, j, 1):
                         return True
         
         return False
