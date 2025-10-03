@@ -3,7 +3,7 @@ class Solution:
         if len(strs) == 1:
             return strs[0]
 
-        max_possible = max([len(s) for s in strs])
+        max_possible = min([len(s) for s in strs])
 
         if max_possible == 0:
             return ""
