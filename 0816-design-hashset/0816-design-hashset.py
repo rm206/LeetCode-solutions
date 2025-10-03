@@ -1,7 +1,7 @@
 class MyHashSet:
 
     def __init__(self):
-        self.bins = 10
+        self.bins = 50
         self.store = [[] for _ in range(self.bins)]
 
     def add(self, key: int) -> None:
