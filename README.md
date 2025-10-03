@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0485-max-consecutive-ones](https://github.com/rm206/LeetCode-solutions/tree/master/0485-max-consecutive-ones) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
+| [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1435-xor-queries-of-a-subarray](https://github.com/rm206/LeetCode-solutions/tree/master/1435-xor-queries-of-a-subarray) |
@@ -69,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/rm206/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
+| [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 ## Two Pointers
 |  |
 | ------- |
@@ -145,6 +147,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0143-reorder-list](https://github.com/rm206/LeetCode-solutions/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
+| [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 ## Stack
 |  |
 | ------- |
@@ -197,6 +200,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/rm206/LeetCode-solutions/tree/master/0225-implement-stack-using-queues) |
+| [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -278,6 +282,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0572-subtree-of-another-tree) |
+| [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 ## Binary Search Tree
 |  |
 | ------- |
