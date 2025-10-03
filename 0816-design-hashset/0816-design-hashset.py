@@ -1,33 +1,19 @@
 class MyHashSet:
 
     def __init__(self):
-        self.size = 10000
-        self.s = [None] * self.size
+        self.bins = 10
+        self.store = [[] for _ in range(self.bins)]
 
     def add(self, key: int) -> None:
-        index = key % self.size
-
-        if self.s[index] is None:
-            self.s[index] = [key]
-        else:
-            if key in self.s[index]:
-                return
-            self.s[index].append(key)
+        if key not in self.store[key % self.bins]:
+            self.store[key % self.bins].append(key)
 
     def remove(self, key: int) -> None:
-        index = key % self.size
-
-        if self.s[index] is not None:
-            if key in self.s[index]:
-                self.s[index].remove(key)
+        if key in self.store[key % self.bins]:
+            self.store[key % self.bins].remove(key)
 
     def contains(self, key: int) -> bool:
-        index = key % self.size
-
-        if self.s[index] is None:
-            return False
-        else:
-            return key in self.s[index]
+        return key in self.store[key % self.bins]
 
 
 # Your MyHashSet object will be instantiated and called as such:
