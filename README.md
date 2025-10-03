@@ -64,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0424-longest-repeating-character-replacement](https://github.com/rm206/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 ## Two Pointers
 |  |
 | ------- |
@@ -162,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/rm206/LeetCode-solutions/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/rm206/LeetCode-solutions/tree/master/0242-valid-anagram) |
+| [0424-longest-repeating-character-replacement](https://github.com/rm206/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 | [2727-number-of-senior-citizens](https://github.com/rm206/LeetCode-solutions/tree/master/2727-number-of-senior-citizens) |
 ## Queue
 |  |
@@ -173,6 +175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
+| [0424-longest-repeating-character-replacement](https://github.com/rm206/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
