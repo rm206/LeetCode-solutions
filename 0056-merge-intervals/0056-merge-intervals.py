@@ -1,17 +1,18 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        res = []
         intervals.sort()
-        for s, e in intervals:
-            if not res:
-                res.append([s, e])
+        stack = []
+
+        for i in intervals:
+            if not stack:
+                stack.append(i)
+            
+            elif stack[-1][1] >= i[0]:
+                t0, t1 = stack.pop()
+                merge_s, merge_e = min(t0, i[0]), max(t1, i[1])
+                stack.append([merge_s, merge_e])
+            
             else:
-                if s <= res[-1][1]:
-                    prev = res.pop()
-                    to_add = [min(s, prev[0]), max(e, prev[1])]
-                else:
-                    to_add = [s, e]
-                
-                res.append(to_add.copy())
+                stack.append(i)
         
-        return res
+        return stack
