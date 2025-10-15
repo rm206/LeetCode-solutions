@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2727-number-of-senior-citizens](https://github.com/rm206/LeetCode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/rm206/LeetCode-solutions/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -98,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Sorting
 |  |
 | ------- |
