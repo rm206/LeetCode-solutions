@@ -4,7 +4,6 @@ class Solution:
         c = Counter(nums)
 
         while original in c:
-            print(original)
             original *= 2
         
         return original
