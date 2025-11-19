@@ -316,4 +316,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
+## Database
+|  |
+| ------- |
+| [0584-find-customer-referee](https://github.com/rm206/LeetCode-solutions/tree/master/0584-find-customer-referee) |
 <!---LeetCode Topics End-->
