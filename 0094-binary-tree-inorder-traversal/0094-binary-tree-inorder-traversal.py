@@ -5,16 +5,14 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def helper(self, root, arr):
-        if root is None:
-            return
-        self.helper(root.left, arr)
-        arr.append(root.val)
-        self.helper(root.right, arr)
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if root is None:
-            return
-        a = []
-        self.helper(root, a)
-        return a
+        def inorder(node):
+            if not node:
+                return
+            inorder(node.left)
+            res.append(node.val)
+            inorder(node.right)
         
+        res = []
+        inorder(root)
+        return res
