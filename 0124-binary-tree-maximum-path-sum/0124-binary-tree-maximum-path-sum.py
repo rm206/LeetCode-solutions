@@ -4,21 +4,19 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+import math
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
-        def helper(node):
+        def dfs(node):
             nonlocal res
-
             if not node:
-                return float("-inf")
+                return 0
             
-            left = helper(node.left)
-            right = helper(node.right)
-
-            res = max(res, node.val, left + node.val, right + node.val, left + node.val + right)
-            max_passing_through_node = max(left + node.val, right + node.val, node.val)
-            return max_passing_through_node
+            lsum = max(0, dfs(node.left))
+            rsum = max(0, dfs(node.right))
+            res = max(res, node.val + lsum + rsum)
+            return node.val + max(lsum, rsum)
         
-        res = float("-inf")
-        helper(root)
+        res = -math.inf
+        dfs(root)
         return res
