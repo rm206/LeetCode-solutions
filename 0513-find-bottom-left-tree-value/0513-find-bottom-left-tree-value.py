@@ -11,15 +11,18 @@ class Solution:
         q.append(root)
 
         while q:
-            level = []
+            is_first_el_found = False
+            first_el_found = None
             l = len(q)
             for _ in range(l):
                 node = q.pop(0)
-                level.append(node.val)
+                if not is_first_el_found:
+                    is_first_el_found = True
+                    first_el_found = node.val
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            res = level[0]
+            res = first_el_found
         
         return res
