@@ -21,9 +21,8 @@ class Solution:
                 q.append((node.right, row+1, col+1))
         
         res = []
-        while hashmap:
-            val = min(hashmap)
+        sorted_keys = sorted(hashmap.keys())
+        for val in sorted_keys:
             res.append(list(map(lambda x: x[1], sorted(hashmap[val]))))
-            del(hashmap[val])
         
         return res
