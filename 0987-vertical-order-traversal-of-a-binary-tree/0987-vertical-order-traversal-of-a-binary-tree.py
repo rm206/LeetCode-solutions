@@ -25,6 +25,4 @@ class Solution:
         for val in sorted_keys:
             column = sorted(hashmap[val])
             res.append([x[1] for x in column])
-            # res.append(list(map(lambda x: x[1], sorted(hashmap[val]))))
-        
         return res
