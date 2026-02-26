@@ -10,7 +10,6 @@ class Solution:
             nonlocal res
             if not node:
                 return
-            
             res = max(res, curr)
             dfs(node.left, curr + 1)
             dfs(node.right, curr + 1)
