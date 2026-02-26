@@ -23,6 +23,8 @@ class Solution:
         res = []
         sorted_keys = sorted(hashmap.keys())
         for val in sorted_keys:
-            res.append(list(map(lambda x: x[1], sorted(hashmap[val]))))
+            column = sorted(hashmap[val])
+            res.append([x[1] for x in column])
+            # res.append(list(map(lambda x: x[1], sorted(hashmap[val]))))
         
         return res
