@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/rm206/LeetCode-solutions/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/rm206/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/rm206/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
+| [0202-happy-number](https://github.com/rm206/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0217-contains-duplicate](https://github.com/rm206/LeetCode-solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/rm206/LeetCode-solutions/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
@@ -91,6 +92,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/rm206/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/rm206/LeetCode-solutions/tree/master/0143-reorder-list) |
 | [0189-rotate-array](https://github.com/rm206/LeetCode-solutions/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/rm206/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/rm206/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -258,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0007-reverse-integer](https://github.com/rm206/LeetCode-solutions/tree/master/0007-reverse-integer) |
 | [0048-rotate-image](https://github.com/rm206/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/rm206/LeetCode-solutions/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/rm206/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Dynamic Programming
