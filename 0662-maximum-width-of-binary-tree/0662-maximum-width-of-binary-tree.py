@@ -4,24 +4,24 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+import math
 class Solution:
     def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        res = 0
-        prev_num, prev_level = 1, 0
         q = []
-        q.append([root, 1, 0])
-        
+        res = -math.inf
+        q.append((root, 1))
+
         while q:
-            node, num, level = q.pop(0)
-            
-            if level > prev_level:
-                prev_level = level
-                prev_num = num
-            
-            res = max(res, num - prev_num + 1)
-            if node.left:
-                q.append([node.left, 2 * num, level + 1])
-            if node.right:
-                q.append([node.right, 2 * num + 1, level + 1])
+            level = []
+            l = len(q)
+            for _ in range(l):
+                node, index = q.pop(0)
+                level.append((node, index))
+                if node.left:
+                    q.append((node.left, 2*index))
+                if node.right:
+                    q.append((node.right, 2*index+1))
+            width = level[-1][1]-level[0][1]+1
+            res = max(res, width)
         
         return res
