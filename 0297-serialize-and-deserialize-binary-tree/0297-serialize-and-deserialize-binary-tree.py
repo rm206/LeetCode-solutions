@@ -13,18 +13,22 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        def helper(node):
+        if not root:
+            return ""
+        q = []
+        s = []
+        q.append(root)
+        while q:
+            node = q.pop(0)
             if not node:
-                res.append("N")
-                return
-            
-            res.append(str(node.val))
-            helper(node.left)
-            helper(node.right)
+                s.append("#")
+            else:
+                s.append(str(node.val))
+            if node:
+                q.append(node.left)
+                q.append(node.right)
         
-        res = []
-        helper(root)
-        return ",".join(res)
+        return ",".join(s)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -32,21 +36,34 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        def helper():
-            if vals[self.i] == "N":
-                self.i += 1
-                return None
+        if data == "":
+            return None
+
+        index = 0
+        data = data.split(",")
+        root = TreeNode(int(data[0]))
+        q = []
+        q.append(root)
+        while q:
+            node = q.pop(0)
+
+            index += 1
+            if data[index] == "#":
+                node.left = None
+            else:
+                newnode = TreeNode(int(data[index]))
+                node.left = newnode
+                q.append(newnode)
             
-            node = TreeNode(int(vals[self.i]))
-            self.i += 1
-            node.left = helper()
-            node.right = helper()
-            return node
+            index += 1
+            if data[index] == "#":
+                node.right = None
+            else:
+                newnode = TreeNode(int(data[index]))
+                node.right = newnode
+                q.append(newnode)
         
-        vals = data.split(",")
-        self.i = 0
-        res = helper()
-        return res
+        return root
         
 
 # Your Codec object will be instantiated and called as such:
