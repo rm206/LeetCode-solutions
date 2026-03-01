@@ -6,18 +6,16 @@
 #         self.right = right
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
-        
-        def solver(preorder, inorder):
-            # base case
-            if not preorder or not inorder:
+        def solver(inord, preord):
+            if not inord and not preord:
                 return None
             
-            root = TreeNode(preorder[0])
-            index = inorder.index(root.val)
-            root.left = solver(preorder[1 : index + 1], inorder[ : index])
-            root.right = solver(preorder[index + 1 : ], inorder[index + 1 : ])
-            
+            root_val = preord[0]
+            root = TreeNode(root_val)
+            index = inord.index(root_val)
+            root.left = solver(inord[0:index], preord[1:index+1])
+            root.right = solver(inord[index+1:], preord[index+1:])
             return root
         
-        res = solver(preorder, inorder)
+        res = solver(inorder, preorder)
         return res
