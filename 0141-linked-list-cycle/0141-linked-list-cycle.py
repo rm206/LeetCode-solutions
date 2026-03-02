@@ -15,6 +15,6 @@ class Solution:
             fast = fast.next.next
 
             if slow == fast:
-                break
+                return True
         
-        return slow == fast
+        return False
