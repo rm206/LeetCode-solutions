@@ -11,17 +11,22 @@ class Solution:
 
         flag = 1
         while curr:
+            next_curr = curr.next
+
             if flag == 1:
                 odd_curr.next = curr
                 odd_curr = odd_curr.next
+                odd_curr.next = None
             if flag == -1:
                 even_curr.next = curr
                 even_curr = even_curr.next
+                even_curr.next = None
             
-            curr = curr.next
+            # curr = curr.next
+            curr = next_curr
             flag *= -1
         
-        even_curr.next = None
+        # even_curr.next = None
         odd_curr.next = even_head.next
 
         return odd_head.next
