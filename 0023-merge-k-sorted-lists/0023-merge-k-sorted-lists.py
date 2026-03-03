@@ -4,13 +4,12 @@
 #         self.val = val
 #         self.next = next
 import heapq
+
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         if not lists:
             return None
         
-        temp = ListNode()
-        curr = temp
         heap = []
         ctr = 0
 
@@ -19,16 +18,17 @@ class Solution:
                 heapq.heappush(heap, [l.val, ctr, l])
                 ctr += 1
         
-        if not heap:
-            return None
-        
+        dummy = ListNode(-1)
+        curr = dummy
+
         while heap:
-            val, _, node = heapq.heappop(heap)
-            next_to_insert = node.next
+            _, _, node = heapq.heappop(heap)
+
             curr.next = node
-            curr = curr.next
-            if next_to_insert:
-                heapq.heappush(heap, [next_to_insert.val, ctr, next_to_insert])
-            ctr += 1
+            curr = node
+
+            if node.next:
+                heapq.heappush(heap, [node.next.val, ctr, node.next])
+                ctr += 1
         
-        return temp.next
+        return dummy.next
