@@ -1,61 +1,60 @@
-class TrieNode:
-    def __init__(self, ch):
-        self.data = ch
-        self.children = [None for i in range(26)]
-        self.end = False
+class Node:
+    def __init__(self):
+        self.arr = [None] *26
+        self.flag = False
     
+    def has_key(self, char):
+        return self.arr[ord(char) - ord('a')] is not None
+    
+    def set_char(self, char, newnode):
+        self.arr[ord(char) - ord('a')] = newnode
+    
+    def get_char(self, char):
+        return self.arr[ord(char) - ord('a')]
+    
+    def end_word(self):
+        self.flag = True
+    
+    def is_end_of_word(self):
+        return self.flag
+
 class Trie:
 
     def __init__(self):
-        self.root = TrieNode("")
+        self.root = Node()
 
-    def insert_util(self, root, word):
-        if len(word) == 0:
-            root.end = True
-            return
-    
-        index = ord(word[0]) - ord('a')
-        
-        if root.children[index]:
-            child = root.children[index]
-        else:
-            child = TrieNode(word[0])
-            root.children[index] = child
-        
-        self.insert_util(child, word[1 : ])
-    
     def insert(self, word: str) -> None:
-        self.insert_util(self.root, word)
+        node = self.root
+        for c in word:
+            if not node.has_key(c):
+                newnode = Node()
+                node.set_char(c, newnode)
+                node = newnode
+            else:
+                node = node.get_char(c)
+        
+        node.end_word()
 
-    def search_util(self, root, word):
-        if len(word) == 0:
-            return root.end == True
-        
-        index = ord(word[0]) - ord('a')
-        
-        if root.children[index]:
-            child = root.children[index]
-            return self.search_util(child, word[1 : ])
-        else:
-            return False
-    
     def search(self, word: str) -> bool:
-        return self.search_util(self.root, word)
+        node = self.root
+        for c in word:
+            if not node.has_key(c):
+                return False
+            else:
+                node = node.get_char(c)
+        
+        return node.is_end_of_word()
 
-    def prefix_util(self, root, prefix):
-        if len(prefix) == 0:
-            return True
-        
-        index = ord(prefix[0]) - ord('a')
-        
-        if root.children[index]:
-            child = root.children[index]
-            return self.prefix_util(child, prefix[1 : ])
-        else:
-            return False    
-    
     def startsWith(self, prefix: str) -> bool:
-        return self.prefix_util(self.root, prefix)
+        node = self.root
+        for c in prefix:
+            if not node.has_key(c):
+                return False
+            else:
+                node = node.get_char(c)
+        
+        return True
+        
 
 
 # Your Trie object will be instantiated and called as such:
