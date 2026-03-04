@@ -6,10 +6,10 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        def isbst(node, mini, maxi):
+        def solver(node, left, right):
             if not node:
                 return True
-
-            return mini < node.val < maxi and isbst(node.left, mini, node.val) and isbst(node.right, node.val, maxi)
+            
+            return left < node.val and node.val < right and solver(node.left, left, node.val) and solver(node.right, node.val, right)
         
-        return isbst(root, -math.inf, math.inf)
+        return solver(root, -math.inf, math.inf)
