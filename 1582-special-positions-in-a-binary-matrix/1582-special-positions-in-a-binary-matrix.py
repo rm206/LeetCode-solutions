@@ -10,8 +10,8 @@ class Solution:
             1:0
             2:1
         """
-        r = [0 for i in range(len(mat))]
-        c = [0 for i in range(len(mat[0]))]
+        r = [0 for _ in range(len(mat))]
+        c = [0 for _ in range(len(mat[0]))]
 
         for i in range(len(mat)):
             for j in range(len(mat[0])):
