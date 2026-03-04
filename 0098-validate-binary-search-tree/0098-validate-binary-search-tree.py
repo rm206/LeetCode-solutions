@@ -10,6 +10,6 @@ class Solution:
             if not node:
                 return True
             
-            return left < node.val and node.val < right and solver(node.left, left, node.val) and solver(node.right, node.val, right)
+            return left < node.val < right and solver(node.left, left, node.val) and solver(node.right, node.val, right)
         
         return solver(root, -math.inf, math.inf)
