@@ -1,40 +1,40 @@
 class Solution:
     def sumSubarrayMins(self, arr: List[int]) -> int:
-        def calc_nse():
+        def next_smaller_elt():
             res = [len(arr)] * len(arr)
             stack = []
 
-            for i in range(len(arr)):
-                while stack and arr[stack[-1]] > arr[i]:
-                    index = stack.pop()
-                    res[index] = i
-                stack.append(i)
+            for incoming_index, incoming_val in enumerate(arr):
+                # if stack empty or incoming greater than top of stack just add to stack
+                # if stack not empty and incoming smaller than top => next smaller found => process
+                while stack and incoming_val < stack[-1][0]:
+                    val, index = stack.pop()
+                    res[index] = incoming_index
+                    
+                stack.append([incoming_val, incoming_index])
 
             return res
-        
-        def calc_psee():
+
+        def prev_smaller_or_equal():
             res = [-1] * len(arr)
             stack = []
 
-            for i in range(len(arr)):
-                if not stack:
-                    stack.append(i)
-                else:
-                    while stack and arr[stack[-1]] > arr[i]:
-                        stack.pop()
-                    res[i] = stack[-1] if stack else -1
-                    stack.append(i)
+            for incoming_index in range(len(arr)-1, -1, -1):
+                incoming_val = arr[incoming_index]
+
+                while stack and incoming_val <= stack[-1][0]:
+                    val, index = stack.pop()
+                    res[index] = incoming_index
+                
+                stack.append([incoming_val, incoming_index])
             
             return res
-
-        nse = calc_nse() 
-        prev_eq_or_smaller = calc_psee()    
         
+        nse = next_smaller_elt()
+        psee = prev_smaller_or_equal()
         res = 0
+        
         for i in range(len(arr)):
-            left = i - prev_eq_or_smaller[i]
-            right = nse[i] - i
-
-            res += left * right * arr[i]
+            res += arr[i] * (i - psee[i]) * (nse[i] - i)
         
         return res % (10**9 + 7)
