@@ -1,21 +1,21 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        hmap = {}
+        for i, n in enumerate(nums1):
+            hmap[n] = i
+        
         stack = []
-        d = {}
-        for n in nums2:
-            d[n] = -1
-
         for i, n in enumerate(nums2):
-            if not stack:
-                stack.append(n)
-            else:
-                while stack and n > stack[-1]:
-                    val = stack.pop()
-                    d[val] = n
-                stack.append(n)
+            while stack and n > stack[-1][0]:
+                val, index = stack.pop()
+                if index is not None:
+                    nums1[index] = n
+            
+            stack.append([n, hmap.get(n, None)])
         
-        res = []
-        for n in nums1:
-            res.append(d[n])
+        while stack:
+            val, index = stack.pop()
+            if index is not None:
+                nums1[index] = -1
         
-        return res
+        return nums1
