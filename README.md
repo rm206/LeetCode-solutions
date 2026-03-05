@@ -56,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0532-k-diff-pairs-in-an-array](https://github.com/rm206/LeetCode-solutions/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
+| [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
@@ -237,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/rm206/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/rm206/LeetCode-solutions/tree/main/0503-next-greater-element-ii/) | Medium |
+| [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 ## Recursion
 |  |
@@ -453,6 +455,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Simulation
 |  |
 | ------- |
+| [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Database
 |  |
