@@ -3,24 +3,19 @@ class Solution:
         stack = []
 
         for a in asteroids:
-            if not stack:
+            if a > 0:
                 stack.append(a)
-            else:
-                if a > 0:
+            
+            if a < 0:
+                deleted = False
+                while stack and stack[-1] > 0 and not deleted:
+                    prev = stack.pop()
+                    if prev == abs(a):
+                        deleted = True
+                    elif prev >= abs(a):
+                        stack.append(prev)
+                        deleted = True
+                if not deleted:
                     stack.append(a)
-                else:
-                    val = a
-                    while stack and val < 0 and stack[-1] > 0:
-                        top = stack.pop()
-
-                        if top > abs(val):
-                            val = top
-                        elif abs(val) > top:
-                            val = val
-                        else:
-                            val = 0
-                        
-                    if val != 0:
-                        stack.append(val)
         
         return stack
