@@ -10,8 +10,8 @@ class Solution:
 
             while stack and stack[-1][0] < curr_val:
                 _, index = stack.pop()
-                res[index%n] = curr_val
+                res[index] = curr_val
             
-            stack.append([curr_val, i])
+            stack.append([curr_val, curr_index])
         
         return res
