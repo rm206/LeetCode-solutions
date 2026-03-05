@@ -1,16 +1,19 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        charmap = {
+
+        mapping = {
             ")" : "(",
             "}" : "{",
             "]" : "["
         }
+
         for c in s:
-            if c in charmap.values():
+            if c in "({[":
                 stack.append(c)
+            
             else:
-                if stack and stack[-1] == charmap[c]:
+                if stack and stack[-1] == mapping[c]:
                     stack.pop()
                 else:
                     return False
