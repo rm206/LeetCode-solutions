@@ -6,7 +6,7 @@ class Solution:
             if a > 0:
                 stack.append(a)
             
-            if a < 0:
+            else:
                 deleted = False
                 while stack and stack[-1] > 0 and not deleted:
                     prev = stack.pop()
