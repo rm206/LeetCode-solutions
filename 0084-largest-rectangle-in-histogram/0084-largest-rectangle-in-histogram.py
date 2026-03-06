@@ -1,36 +1,44 @@
+"""
+pse_a = pse()
+nse_a = nse()
+res = 0
+for i, h in enumerate(heights):
+    new_height = h * ((nse_a[i]-1) - (pse_a[i]+1) + 1)
+    res = max(res, new_height)
+return res
+"""
+
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
-        def calc_prev_smaller_elt(arr, n):
-            nonlocal heights
+        def nse():
             stack = []
-            stack.append(-1)
-            for i in range(0, n):
-                while stack[-1] != -1 and heights[stack[-1]] >= heights[i]:
-                    stack.pop()
-                arr[i] = stack[-1]
-                stack.append(i)
+            result = [len(heights)] * len(heights)
+            for index, val in enumerate(heights):
+                while stack and val < stack[-1][1]:
+                    p_index, p_val = stack.pop()
+                    result[p_index] = index
                 
-        def calc_next_smaller_elt(arr, n):
-            nonlocal heights
-            stack = []
-            stack.append(-1)
-            for i in range(n-1, -1, -1):
-                while stack[-1] != -1 and heights[stack[-1]] >= heights[i]:
-                    stack.pop()
-                arr[i] = stack[-1]
-                stack.append(i)
+                stack.append([index, val])
             
+            return result
         
-        res = -1
-        prev_smaller_elt = [-1 for i in range(len(heights))]
-        next_smaller_elt = [-1 for i in range(len(heights))]
-        calc_prev_smaller_elt(prev_smaller_elt, len(heights))
-        calc_next_smaller_elt(next_smaller_elt, len(heights))
+        def pse():
+            stack = []
+            result = [-1] * len(heights)
+            for index in range(len(heights)-1, -1, -1):
+                val = heights[index]
+                while stack and val < stack[-1][1]:
+                    p_index, p_val = stack.pop()
+                    result[p_index] = index
+                
+                stack.append([index, val])
+            
+            return result
         
-        for i in range(len(heights)):
-            if next_smaller_elt[i] == -1:
-                next_smaller_elt[i] = len(heights)
-            curr_area = heights[i] * (next_smaller_elt[i] - prev_smaller_elt[i] - 1)
-            res = max(res, curr_area)
-        
+        pse_a = pse()
+        nse_a = nse()
+        res = 0
+        for i, h in enumerate(heights):
+            new_height = h * ((nse_a[i]-1) - (pse_a[i]+1) + 1)
+            res = max(res, new_height)
         return res
