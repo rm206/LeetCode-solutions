@@ -1,19 +1,18 @@
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
-        def is_possible(target):
+        def is_possible(cap):
             ctr = 1
-            curr = 0
-
+            run_sum = 0
             for w in weights:
-                if curr + w <= target:
-                    curr += w
-                else:
+                if run_sum + w > cap:
                     ctr += 1
-                    curr = w
-            
+                    run_sum = w
+                else:
+                    run_sum += w
             return ctr <= days
 
         l, r = max(weights), sum(weights)
+        res = sum(weights)
 
         while l <= r:
             mid = (l + r) // 2
