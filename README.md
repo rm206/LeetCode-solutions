@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0930-binary-subarrays-with-sum](https://github.com/rm206/LeetCode-solutions/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/rm206/LeetCode-solutions/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/rm206/LeetCode-solutions/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/rm206/LeetCode-solutions/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1435-xor-queries-of-a-subarray](https://github.com/rm206/LeetCode-solutions/tree/master/1435-xor-queries-of-a-subarray) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/rm206/LeetCode-solutions/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
@@ -165,6 +166,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/rm206/LeetCode-solutions/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/rm206/LeetCode-solutions/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/rm206/LeetCode-solutions/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
