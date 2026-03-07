@@ -18,10 +18,10 @@ class Solution:
                 return nums[m]
             
             elif (m > 0 and nums[m-1] == nums[m]) :
-                if (m-l+1) %2 != 0:
-                    r = m - 2
-                else:
+                if (m-l+1) %2 == 0:
                     l = m + 1
+                else:
+                    r = m - 2
             
             else:
                 if (r-m+1) % 2 == 0:
