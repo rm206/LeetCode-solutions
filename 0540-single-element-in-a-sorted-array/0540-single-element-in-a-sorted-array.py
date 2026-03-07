@@ -2,7 +2,7 @@ class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
 
         def is_not_paired(index):
-            return(index > 0 and index < n-1 and nums[index-1] != nums[index] and nums[index] != nums[index+1]) or (index == 0 and nums[index] != nums[index+1]) or (index == n-1 and nums[index] != nums[index-1])
+            return (index == 0 and nums[index] != nums[index+1]) or (index == n-1 and nums[index] != nums[index-1]) or (nums[index-1] != nums[index] and nums[index] != nums[index+1])
 
         n = len(nums)
 
