@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0496-next-greater-element-i](https://github.com/rm206/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/rm206/LeetCode-solutions/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/rm206/LeetCode-solutions/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
+| [0540-single-element-in-a-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/rm206/LeetCode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0704-binary-search](https://github.com/rm206/LeetCode-solutions/tree/master/0704-binary-search) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0717-1-bit-and-2-bit-characters) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/rm206/LeetCode-solutions/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
+| [0540-single-element-in-a-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/rm206/LeetCode-solutions/tree/master/0704-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/rm206/LeetCode-solutions/tree/main/1004-max-consecutive-ones-iii/) | Medium |
