@@ -1,7 +1,7 @@
 import math
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        def hours_this_will_take(rate: int) -> float:
+        def hours_this_will_take(rate: int) -> int:
             hrs = 0
             for pile in piles:
                 hrs += math.ceil(pile/rate)
