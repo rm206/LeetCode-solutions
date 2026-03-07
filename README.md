@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/rm206/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
+| [0035-search-insert-position](https://github.com/rm206/LeetCode-solutions/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/rm206/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0048-rotate-image](https://github.com/rm206/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/rm206/LeetCode-solutions/tree/master/0049-group-anagrams) |
@@ -138,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
+| [0035-search-insert-position](https://github.com/rm206/LeetCode-solutions/tree/master/0035-search-insert-position) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0222-count-complete-tree-nodes](https://github.com/rm206/LeetCode-solutions/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
