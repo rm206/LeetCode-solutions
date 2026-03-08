@@ -1,25 +1,18 @@
+from collections import defaultdict
 class Solution:
     def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
         n = len(grid)
 
-        total_sum = 0
-        seen = set()
-        double_val = None
+        counts = defaultdict(int)
 
-        for i in range(len(grid)):
-            for j in range(len(grid)):
-                elt = grid[i][j]
-                total_sum += elt
-                if elt in seen:
-                    double_val = grid[i][j]
-                seen.add(elt)
+        for i in range(n):
+            for j in range(n):
+                counts[grid[i][j]] += 1
         
-        total_els = n * n
-        diff = ((total_els * (total_els + 1))//2) - total_sum
-        
-        if double_val + diff < n*n + 1 and double_val + diff not in seen:
-            missing = double_val + diff
-        else:
-            missing = double_val - diff
+        for i in range(n*n + 1):
+            if counts[i] == 2:
+                double_val = i
+            if counts[i] == 0:
+                missing = i
         
         return [double_val, missing]
