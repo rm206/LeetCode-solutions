@@ -8,6 +8,7 @@ class Solution:
                 res = max(res, prices[r]-prices[l])
             else:
                 l = r
+            
             r += 1
         
         return res
