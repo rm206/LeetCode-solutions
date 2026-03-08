@@ -3,17 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        fix = -1
-        for i in range(0, len(nums)):
-            if nums[i] == 0:
-                fix = i
-                break
+        last_safe = 0
+        curr = 0
+
+        for curr in range(len(nums)):
+            if nums[curr] != 0:
+                nums[last_safe] = nums[curr]
+                last_safe += 1
         
-        if fix == -1 or fix == len(nums):
-            return
-        
-        for i in range(fix+1, len(nums)):
-            if nums[i] != 0:
-                nums[i], nums[fix] = nums[fix], nums[i]
-                fix += 1
-        
+        for i in range(last_safe, len(nums)):
+            nums[i] = 0
