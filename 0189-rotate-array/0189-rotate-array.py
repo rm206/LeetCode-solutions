@@ -3,14 +3,17 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        def rev(start, finish):
-            l, r = start, finish
+        def reverse(l, r):
             while l < r:
                 nums[l], nums[r] = nums[r], nums[l]
                 l += 1
                 r -= 1
 
         k = k % len(nums)
-        rev(0, len(nums)-k-1)
-        rev(len(nums)-k, len(nums)-1)
-        rev(0, len(nums)-1)
+
+        if k == 0:
+            return
+        
+        reverse(0, len(nums)-k-1)
+        reverse(len(nums)-k, len(nums)-1)
+        reverse(0, len(nums)-1)
