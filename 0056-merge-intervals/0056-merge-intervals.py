@@ -3,16 +3,18 @@ class Solution:
         intervals.sort()
         stack = []
 
-        for i in intervals:
+        for new_s, new_e in intervals:
+            to_append_1, to_append_2 = None, None
+
             if not stack:
-                stack.append(i)
-            
-            elif stack[-1][1] >= i[0]:
-                t0, t1 = stack.pop()
-                merge_s, merge_e = min(t0, i[0]), max(t1, i[1])
-                stack.append([merge_s, merge_e])
-            
+                to_append_1, to_append_2 = new_s, new_e
             else:
-                stack.append(i)
+                if stack[-1][0] <= new_s <= stack[-1][1]:
+                    pop_s, pop_e = stack.pop()
+                    to_append_1, to_append_2 = min(pop_s, new_s), max(pop_e, new_e)
+                else:
+                    to_append_1, to_append_2 = new_s, new_e
+            
+            stack.append([to_append_1, to_append_2])
         
         return stack
