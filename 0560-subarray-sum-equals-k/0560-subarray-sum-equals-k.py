@@ -7,9 +7,7 @@ class Solution:
         res = 0
         for n in nums:
             run_sum += n
-
-            # if run_sum-k in mp:
-            #     res += mp[run_sum-k]
+            
             res += mp.get(run_sum-k, 0)
             
             mp[run_sum] += 1
