@@ -4,8 +4,9 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
         matrix.reverse()
-        n = len(matrix)
-        for i in range(n):
-            for j in range(n):
-                if j > i:
+        
+        for i in range(len(matrix)):
+            for j in range(len(matrix[0])):
+                if i < j:
                     matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+        
