@@ -21,8 +21,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/rm206/LeetCode-solutions/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/rm206/LeetCode-solutions/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/rm206/LeetCode-solutions/tree/master/0014-longest-common-prefix) |
@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0057-insert-interval](https://github.com/rm206/LeetCode-solutions/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/rm206/LeetCode-solutions/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/rm206/LeetCode-solutions/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/rm206/LeetCode-solutions/tree/main/0084-largest-rectangle-in-histogram/) | Hard |
 | [0088-merge-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
@@ -94,8 +95,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/rm206/LeetCode-solutions/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Hash Table
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/rm206/LeetCode-solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/rm206/LeetCode-solutions/tree/master/0049-group-anagrams) |
@@ -125,14 +126,15 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3242-count-elements-with-maximum-frequency](https://github.com/rm206/LeetCode-solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/rm206/LeetCode-solutions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 ## Two Pointers
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0011-container-with-most-water](https://github.com/rm206/LeetCode-solutions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/rm206/LeetCode-solutions/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/rm206/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/rm206/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/rm206/LeetCode-solutions/tree/master/0061-rotate-list) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/rm206/LeetCode-solutions/tree/main/0080-remove-duplicates-from-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0125-valid-palindrome](https://github.com/rm206/LeetCode-solutions/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/rm206/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
@@ -151,8 +153,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/rm206/LeetCode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Binary Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/rm206/LeetCode-solutions/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/rm206/LeetCode-solutions/tree/master/0035-search-insert-position) |
@@ -179,8 +181,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Sorting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0015-3sum](https://github.com/rm206/LeetCode-solutions/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/rm206/LeetCode-solutions/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/rm206/LeetCode-solutions/tree/master/0056-merge-intervals) |
@@ -198,8 +200,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/rm206/LeetCode-solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/rm206/LeetCode-solutions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 ## Depth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0098-validate-binary-search-tree) |
@@ -224,8 +226,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Breadth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0100-same-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
@@ -240,13 +242,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Union Find
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/rm206/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/rm206/LeetCode-solutions/tree/master/0200-number-of-islands) |
 ## Matrix
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0048-rotate-image](https://github.com/rm206/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/rm206/LeetCode-solutions/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
@@ -256,8 +258,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1582-special-positions-in-a-binary-matrix](https://github.com/rm206/LeetCode-solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [2643-row-with-maximum-ones](https://github.com/rm206/LeetCode-solutions/tree/main/2643-row-with-maximum-ones/) | Easy |
 ## Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rm206/LeetCode-solutions/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/rm206/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0021-merge-two-sorted-lists) |
@@ -277,8 +279,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0876-middle-of-the-linked-list](https://github.com/rm206/LeetCode-solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/rm206/LeetCode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 ## Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0020-valid-parentheses](https://github.com/rm206/LeetCode-solutions/tree/master/0020-valid-parentheses) |
 | [0084-largest-rectangle-in-histogram](https://github.com/rm206/LeetCode-solutions/tree/main/0084-largest-rectangle-in-histogram/) | Hard |
 | [0094-binary-tree-inorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
@@ -296,8 +298,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0901-online-stock-span](https://github.com/rm206/LeetCode-solutions/tree/main/0901-online-stock-span/) | Medium |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 ## Recursion
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rm206/LeetCode-solutions/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/rm206/LeetCode-solutions/tree/master/0143-reorder-list) |
@@ -306,8 +308,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0234-palindrome-linked-list](https://github.com/rm206/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## String
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0014-longest-common-prefix](https://github.com/rm206/LeetCode-solutions/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/rm206/LeetCode-solutions/tree/master/0020-valid-parentheses) |
@@ -327,13 +329,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1980-find-unique-binary-string](https://github.com/rm206/LeetCode-solutions/tree/master/1980-find-unique-binary-string) |
 | [2727-number-of-senior-citizens](https://github.com/rm206/LeetCode-solutions/tree/master/2727-number-of-senior-citizens) |
 ## Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0225-implement-stack-using-queues](https://github.com/rm206/LeetCode-solutions/tree/master/0225-implement-stack-using-queues) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 ## Sliding Window
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rm206/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/rm206/LeetCode-solutions/tree/master/0424-longest-repeating-character-replacement) |
@@ -344,18 +346,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/rm206/LeetCode-solutions/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/rm206/LeetCode-solutions/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 ## Heap (Priority Queue)
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Monotonic Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/rm206/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 ## Design
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0155-min-stack](https://github.com/rm206/LeetCode-solutions/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/rm206/LeetCode-solutions/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0208-implement-trie-prefix-tree) |
@@ -364,15 +366,15 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 | [0901-online-stock-span](https://github.com/rm206/LeetCode-solutions/tree/main/0901-online-stock-span/) | Medium |
 ## Bit Manipulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0136-single-number](https://github.com/rm206/LeetCode-solutions/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/rm206/LeetCode-solutions/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [1435-xor-queries-of-a-subarray](https://github.com/rm206/LeetCode-solutions/tree/master/1435-xor-queries-of-a-subarray) |
 ## Prefix Sum
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/rm206/LeetCode-solutions/tree/master/0238-product-of-array-except-self) |
 | [0560-subarray-sum-equals-k](https://github.com/rm206/LeetCode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/rm206/LeetCode-solutions/tree/main/0930-binary-subarrays-with-sum/) | Medium |
@@ -381,8 +383,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1435-xor-queries-of-a-subarray](https://github.com/rm206/LeetCode-solutions/tree/master/1435-xor-queries-of-a-subarray) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/rm206/LeetCode-solutions/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 ## Math
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/rm206/LeetCode-solutions/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/rm206/LeetCode-solutions/tree/master/0007-reverse-integer) |
 | [0048-rotate-image](https://github.com/rm206/LeetCode-solutions/tree/master/0048-rotate-image) |
@@ -393,51 +395,51 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Dynamic Programming
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rm206/LeetCode-solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/rm206/LeetCode-solutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Memoization
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 ## Divide and Conquer
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0148-sort-list](https://github.com/rm206/LeetCode-solutions/tree/main/0148-sort-list/) | Medium |
 | [0240-search-a-2d-matrix-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Bucket Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Counting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/rm206/LeetCode-solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 ## Quickselect
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Greedy
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0011-container-with-most-water](https://github.com/rm206/LeetCode-solutions/tree/master/0011-container-with-most-water) |
 | [0402-remove-k-digits](https://github.com/rm206/LeetCode-solutions/tree/master/0402-remove-k-digits) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/rm206/LeetCode-solutions/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 ## Merge Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rm206/LeetCode-solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/rm206/LeetCode-solutions/tree/main/0148-sort-list/) | Medium |
 ## Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0100-same-tree) |
@@ -467,8 +469,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0100-same-tree) |
@@ -498,17 +500,17 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## String Matching
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0572-subtree-of-another-tree) |
 ## Hash Function
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0572-subtree-of-another-tree) |
 | [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
 ## Binary Search Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0098-validate-binary-search-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/rm206/LeetCode-solutions/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/rm206/LeetCode-solutions/tree/master/0230-kth-smallest-element-in-a-bst) |
@@ -517,33 +519,33 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0700-search-in-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 ## Backtracking
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0039-combination-sum](https://github.com/rm206/LeetCode-solutions/tree/master/0039-combination-sum) |
 | [0079-word-search](https://github.com/rm206/LeetCode-solutions/tree/master/0079-word-search) |
 | [0257-binary-tree-paths](https://github.com/rm206/LeetCode-solutions/tree/master/0257-binary-tree-paths) |
 | [1980-find-unique-binary-string](https://github.com/rm206/LeetCode-solutions/tree/master/1980-find-unique-binary-string) |
 ## Trie
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0014-longest-common-prefix](https://github.com/rm206/LeetCode-solutions/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0208-implement-trie-prefix-tree) |
 ## Simulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Database
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0584-find-customer-referee](https://github.com/rm206/LeetCode-solutions/tree/master/0584-find-customer-referee) |
 ## Iterator
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/rm206/LeetCode-solutions/tree/main/0173-binary-search-tree-iterator/) | Medium |
 ## Monotonic Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/rm206/LeetCode-solutions/tree/main/0084-largest-rectangle-in-histogram/) | Hard |
 | [0402-remove-k-digits](https://github.com/rm206/LeetCode-solutions/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/rm206/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
@@ -551,7 +553,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0901-online-stock-span](https://github.com/rm206/LeetCode-solutions/tree/main/0901-online-stock-span/) | Medium |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 ## Data Stream
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0901-online-stock-span](https://github.com/rm206/LeetCode-solutions/tree/main/0901-online-stock-span/) | Medium |
 <!---LeetCode Topics End-->
