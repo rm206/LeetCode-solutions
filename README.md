@@ -127,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0930-binary-subarrays-with-sum](https://github.com/rm206/LeetCode-solutions/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/rm206/LeetCode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/rm206/LeetCode-solutions/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1980-find-unique-binary-string](https://github.com/rm206/LeetCode-solutions/tree/master/1980-find-unique-binary-string) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2965-find-missing-and-repeated-values](https://github.com/rm206/LeetCode-solutions/tree/master/2965-find-missing-and-repeated-values) |
@@ -343,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/rm206/LeetCode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/rm206/LeetCode-solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/rm206/LeetCode-solutions/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/rm206/LeetCode-solutions/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/rm206/LeetCode-solutions/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1903-largest-odd-number-in-string](https://github.com/rm206/LeetCode-solutions/tree/master/1903-largest-odd-number-in-string) |
 | [1980-find-unique-binary-string](https://github.com/rm206/LeetCode-solutions/tree/master/1980-find-unique-binary-string) |
@@ -447,6 +449,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/rm206/LeetCode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/rm206/LeetCode-solutions/tree/main/0451-sort-characters-by-frequency/) | Medium |
+| [1781-sum-of-beauty-of-all-substrings](https://github.com/rm206/LeetCode-solutions/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/rm206/LeetCode-solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 ## Quickselect
 |  |
