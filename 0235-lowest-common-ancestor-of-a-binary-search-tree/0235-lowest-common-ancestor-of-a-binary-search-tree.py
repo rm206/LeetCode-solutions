@@ -7,13 +7,23 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        curr = root
+        def solver(node):
+            if not node:
+                return None
+            
+            if node.val == p.val or node.val == q.val:
+                return node
+            
+            left = solver(node.left)
+            right = solver(node.right)
 
-        while curr:
-            if curr.val < p.val and curr.val < q.val:
-                curr = curr.right
-            elif curr.val > p.val and curr.val > q.val:
-                curr = curr.left
-            else:
-                return curr
+            if not left and not right:
+                return None
+            if left and not right:
+                return left
+            if right and not left:
+                return right
+            
+            return node
         
+        return solver(root)
