@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/rm206/LeetCode-solutions/tree/main/0930-binary-subarrays-with-sum/) | Medium |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/rm206/LeetCode-solutions/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/rm206/LeetCode-solutions/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1046-last-stone-weight](https://github.com/rm206/LeetCode-solutions/tree/main/1046-last-stone-weight/) | Easy |
@@ -206,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0350-intersection-of-two-arrays-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0451-sort-characters-by-frequency](https://github.com/rm206/LeetCode-solutions/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/rm206/LeetCode-solutions/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/rm206/LeetCode-solutions/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -377,6 +379,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/rm206/LeetCode-solutions/tree/main/0451-sort-characters-by-frequency/) | Medium |
 | [0703-kth-largest-element-in-a-stream](https://github.com/rm206/LeetCode-solutions/tree/main/0703-kth-largest-element-in-a-stream/) | Easy |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 | [1046-last-stone-weight](https://github.com/rm206/LeetCode-solutions/tree/main/1046-last-stone-weight/) | Easy |
 ## Monotonic Queue
 | Problem Name | Difficulty |
@@ -421,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0202-happy-number](https://github.com/rm206/LeetCode-solutions/tree/master/0202-happy-number) |
 | [0263-ugly-number](https://github.com/rm206/LeetCode-solutions/tree/master/0263-ugly-number) |
 | [0268-missing-number](https://github.com/rm206/LeetCode-solutions/tree/master/0268-missing-number) |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 | [1013-fibonacci-number](https://github.com/rm206/LeetCode-solutions/tree/master/1013-fibonacci-number) |
 | [1903-largest-odd-number-in-string](https://github.com/rm206/LeetCode-solutions/tree/master/1903-largest-odd-number-in-string) |
 | [2965-find-missing-and-repeated-values](https://github.com/rm206/LeetCode-solutions/tree/master/2965-find-missing-and-repeated-values) |
@@ -444,6 +448,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/rm206/LeetCode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0240-search-a-2d-matrix-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 ## Bucket Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -461,6 +466,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -603,4 +609,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/rm206/LeetCode-solutions/tree/master/0128-longest-consecutive-sequence) |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/main/0973-k-closest-points-to-origin/) | Medium |
 <!---LeetCode Topics End-->
