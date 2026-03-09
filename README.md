@@ -241,6 +241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0662-maximum-width-of-binary-tree) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -257,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0662-maximum-width-of-binary-tree) |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Union Find
 |  |
 | ------- |
@@ -517,6 +519,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0703-kth-largest-element-in-a-stream](https://github.com/rm206/LeetCode-solutions/tree/main/0703-kth-largest-element-in-a-stream/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -549,6 +552,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0703-kth-largest-element-in-a-stream](https://github.com/rm206/LeetCode-solutions/tree/main/0703-kth-largest-element-in-a-stream/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## String Matching
 |  |
 | ------- |
