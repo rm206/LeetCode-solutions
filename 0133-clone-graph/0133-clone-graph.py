@@ -11,9 +11,9 @@ class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
         if not node:
             return None
-        if not node.neighbors:
-            return Node(node.val)
-            
+        # if not node.neighbors:
+        #     return Node(node.val)
+
         def dfs(curr):
             visited.add(curr)
             mp[curr] = Node(curr.val)
