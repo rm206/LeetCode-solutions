@@ -16,7 +16,7 @@ class Solution:
         visited = set()
         for i in range(len(grid)):
             for j in range(len(grid[0])):
-                if (i, j) not in visited and grid[i][j] == "1":
+                if is_safe(i, j):
                     ctr += 1
                     dfs(i, j)
         return ctr
