@@ -2,19 +2,16 @@ class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         ROWS, COLS = len(grid), len(grid[0])
 
+        def is_safe(row, col):
+            return row >= 0 and row < ROWS and col >= 0 and col < COLS and grid[row][col] == "1" and (row, col) not in visited
+
         def dfs(i, j):
-            if i < 0 or i >= ROWS or j < 0 or j >= COLS or grid[i][j] != "1":
-                return
             visited.add((i, j))
-            if (i+1, j) not in visited:
-                dfs(i+1, j)
-            if (i-1, j) not in visited:
-                dfs(i-1, j)
-            if (i, j+1) not in visited:
-                dfs(i, j+1)
-            if (i, j-1) not in visited:
-                dfs(i, j-1)
+            for dx, dy in dirs:
+                if is_safe(i+dx, j+dy):
+                    dfs(i+dx, j+dy)
         
+        dirs = [[-1, 0], [1, 0], [0, -1], [0, 1]]
         ctr = 0
         visited = set()
         for i in range(len(grid)):
