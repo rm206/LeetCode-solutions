@@ -245,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0513-find-bottom-left-tree-value](https://github.com/rm206/LeetCode-solutions/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0572-subtree-of-another-tree) |
+| [0589-n-ary-tree-preorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/main/0589-n-ary-tree-preorder-traversal/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0662-maximum-width-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/rm206/LeetCode-solutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
@@ -326,6 +327,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0402-remove-k-digits](https://github.com/rm206/LeetCode-solutions/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/rm206/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/rm206/LeetCode-solutions/tree/main/0503-next-greater-element-ii/) | Medium |
+| [0589-n-ary-tree-preorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/main/0589-n-ary-tree-preorder-traversal/) | Easy |
 | [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [0901-online-stock-span](https://github.com/rm206/LeetCode-solutions/tree/main/0901-online-stock-span/) | Medium |
 | [0907-sum-of-subarray-minimums](https://github.com/rm206/LeetCode-solutions/tree/main/0907-sum-of-subarray-minimums/) | Medium |
@@ -528,6 +530,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0513-find-bottom-left-tree-value](https://github.com/rm206/LeetCode-solutions/tree/master/0513-find-bottom-left-tree-value) |
 | [0543-diameter-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0572-subtree-of-another-tree) |
+| [0589-n-ary-tree-preorder-traversal](https://github.com/rm206/LeetCode-solutions/tree/main/0589-n-ary-tree-preorder-traversal/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0662-maximum-width-of-binary-tree) |
 | [0700-search-in-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/rm206/LeetCode-solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
