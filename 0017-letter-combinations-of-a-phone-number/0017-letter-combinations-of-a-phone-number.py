@@ -1,27 +1,19 @@
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        if digits == "":
-            return []
-            
-        keyboard = {
-            "2": "abc",
-            "3": "def",
-            "4": "ghi",
-            "5": "jkl",
-            "6": "mno",
-            "7": "pqrs",
-            "8": "tuv",
-            "9": "wxyz"
+        mapp = {
+            1: [],                2: ['a', 'b','c'],    3: ['d','e','f'],
+            4: ['g','h','i'],     5: ['j','k','l'],     6: ['m','n','o'],
+            7: ['p','q','r','s'], 8: ['t','u','v'],     9: ['w','x','y','z']
         }
 
-        def solver(curr, curr_len):
-            if curr_len == len(digits):
+        def dfs(index, curr):
+            if index == len(digits):
                 res.append(curr)
                 return
-
-            for c in keyboard[digits[curr_len]]:
-                solver(curr+c, curr_len+1)
+            
+            for char in mapp[int(digits[index])]:
+                dfs(index+1, curr+char)
         
         res = []
-        solver("", 0)
+        dfs(0, "")
         return res
