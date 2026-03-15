@@ -6,12 +6,10 @@ class Solution:
         if len(nums) == 0:
             return False
         
-        max_reach = 0
+        goal = len(nums) - 1
 
-        for i, n in enumerate(nums):
-            if i > max_reach:
-                return False
-            
-            max_reach = max(max_reach, i + n)
+        for i in range(len(nums)-1, -1, -1):
+            if i + nums[i] >= goal:
+                goal = i
         
-        return True
+        return goal <= 0
