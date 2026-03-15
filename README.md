@@ -77,6 +77,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/rm206/LeetCode-solutions/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [0816-design-hashset](https://github.com/rm206/LeetCode-solutions/tree/master/0816-design-hashset) |
+| [0860-lemonade-change](https://github.com/rm206/LeetCode-solutions/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/rm206/LeetCode-solutions/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0907-koko-eating-bananas](https://github.com/rm206/LeetCode-solutions/tree/master/0907-koko-eating-bananas) |
@@ -515,6 +516,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/rm206/LeetCode-solutions/tree/master/0011-container-with-most-water) |
 | [0402-remove-k-digits](https://github.com/rm206/LeetCode-solutions/tree/master/0402-remove-k-digits) |
 | [0455-assign-cookies](https://github.com/rm206/LeetCode-solutions/tree/main/0455-assign-cookies/) | Easy |
+| [0860-lemonade-change](https://github.com/rm206/LeetCode-solutions/tree/main/0860-lemonade-change/) | Easy |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/rm206/LeetCode-solutions/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/rm206/LeetCode-solutions/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1903-largest-odd-number-in-string](https://github.com/rm206/LeetCode-solutions/tree/master/1903-largest-odd-number-in-string) |
