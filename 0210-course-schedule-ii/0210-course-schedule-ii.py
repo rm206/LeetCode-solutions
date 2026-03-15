@@ -1,11 +1,5 @@
-class Solution:
-    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        def build_graph():
-            g = {x:[] for x in range(numCourses)}
-            for u, v in prerequisites:
-                g[v].append(u)
-            return g
-        def indegrees():
+"""
+def indegrees():
             i = {x:0 for x in range(numCourses)}
             for node in graph:
                 for neigh in graph[node]:
@@ -30,3 +24,36 @@ class Solution:
                     q.append(neigh)
         
         return res if len(res) == numCourses else []
+"""
+
+class Solution:
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        def build_graph():
+            g = {x:[] for x in range(numCourses)}
+            for u, v in prerequisites:
+                g[u].append(v)
+            return g
+        
+        def has_cycle(node):
+            visited.add(node)
+            dfs_visited.add(node)
+
+            for neigh in graph[node]:
+                if neigh not in visited and has_cycle(neigh):
+                    return True
+                elif neigh in visited and neigh not in dfs_visited:
+                    pass
+                elif neigh in visited and neigh in dfs_visited:
+                    return True
+
+            dfs_visited.remove(node)
+            stack.append(node)
+            return False
+
+        graph = build_graph()  
+        visited, dfs_visited = set(), set()
+        stack = []
+        for node in range(numCourses):
+            if node not in visited and has_cycle(node):
+                return []
+        return stack
