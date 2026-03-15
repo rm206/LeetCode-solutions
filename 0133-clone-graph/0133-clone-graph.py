@@ -6,13 +6,11 @@ class Node:
         self.neighbors = neighbors if neighbors is not None else []
 """
 
-from typing import Optional
+from typing import Optional 
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
         if not node:
             return None
-        # if not node.neighbors:
-        #     return Node(node.val)
 
         def dfs(curr):
             visited.add(curr)
@@ -28,6 +26,6 @@ class Solution:
 
         for orig, cpy in mp.items():
             for neighbor in orig.neighbors:
-                mp[orig].neighbors.append(mp[neighbor])
+                cpy.neighbors.append(mp[neighbor])
         
         return mp[node]
