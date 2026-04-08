@@ -112,6 +112,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/rm206/LeetCode-solutions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/rm206/LeetCode-solutions/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/rm206/LeetCode-solutions/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/rm206/LeetCode-solutions/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -515,6 +516,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0240-search-a-2d-matrix-ii](https://github.com/rm206/LeetCode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/rm206/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/rm206/LeetCode-solutions/tree/master/0973-k-closest-points-to-origin) |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/rm206/LeetCode-solutions/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -661,6 +663,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0735-asteroid-collision](https://github.com/rm206/LeetCode-solutions/tree/master/0735-asteroid-collision) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/rm206/LeetCode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rm206/LeetCode-solutions/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [3653-xor-after-range-multiplication-queries-i](https://github.com/rm206/LeetCode-solutions/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Database
 |  |
 | ------- |
